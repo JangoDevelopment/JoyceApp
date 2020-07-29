@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, BrowserRouter} from 'react-router-dom'
+import {Route, BrowserRouter, Switch} from 'react-router-dom'
 
 /****IMPORT PAGES******/
 
@@ -9,8 +9,10 @@ import Contact from './pages/Contact'
 const Routes = () =>{
     return (
         <BrowserRouter>
-            <Route component={ Home } exact path="/" />
-            <Route component={ Contact } exact path="/contact" />
+            <Switch>
+                <Route component={ Home } exact path="/" />
+                <Route component={ Contact } exact path="/contact" />
+            </Switch>
         </BrowserRouter>
     )
 }
