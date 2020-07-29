@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+    background-color: #525252;
+    min-height: 160px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.footer p {
+    font-family: "Poppins", sans-serif;
+    color: var(--light-gray);
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+
+.footer .block {
+    align-items: flex-start;
+}
+
+.footer .icons {
+    width: 100%;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .icon {
+    color: #ffffff;
+    height: 35px;
+    width: 35px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.footer .icon:hover {
+    color: #ffbb00;
+}
