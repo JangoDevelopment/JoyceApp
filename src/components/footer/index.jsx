@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaCoffee } from "react-icons/fa";
 import "./styles.css";
 
 const Footer = (props) => {
@@ -12,17 +12,26 @@ const Footer = (props) => {
                 <p>Guaratingueta, Sao Paulo</p>
             </div>
             <div className="block contact flex-column">
-                <p>Vamos tomar um café?</p>
+                <div className="coffee flex link">
+                    <p>Vamos tomar um café?</p>
+                    <FaCoffee className="coffee_icon" />
+                </div>
                 <p>fulana@gmail.com</p>
-                <p>(12) 9 9187 - 7727</p>
+                <p>
+                    <span>(12)</span> 9 9187 - 7727
+                </p>
             </div>
             <div className="block info flex-column">
                 <div className="flex icons">
-                    <AiOutlineInstagram className="icon" />
-                    <FaFacebookSquare className="icon" />
+                    <AiOutlineInstagram className="icon link" />
+                    <FaFacebookSquare className="icon link" />
                 </div>
-                <p>© 2020 - Joyce Caçador</p>
-                <p>Made with love by Jango</p>
+                <p>
+                    © 2020 - <span className="link">Joyce Caçador</span>
+                </p>
+                <p>
+                    Made with love by <span className="link">Jango</span>
+                </p>
             </div>
         </footer>
     );

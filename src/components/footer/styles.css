@@ -16,8 +16,29 @@
     margin-bottom: 3px;
 }
 
+.footer p span {
+    font-weight: 500;
+}
+
 .footer .block {
     align-items: flex-start;
+}
+
+.footer .coffee {
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer .coffee_icon {
+    margin-left: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+
+.footer .coffee_icon:hover {
+    color: var(--dark-yellow);
 }
 
 .footer .icons {
@@ -31,7 +52,7 @@
     color: #ffffff;
     height: 35px;
     width: 35px;
-    transition: all 0.4s;
+    transition: all 0.3s;
     cursor: pointer;
 }
 

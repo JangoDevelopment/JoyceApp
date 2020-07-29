@@ -1,4 +1,14 @@
 .App {
     --light-gray: #ebebeb;
     --light-yellow: #e7cb6c;
+    --dark-yellow: #ffbb00;
+}
+
+.link {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.link:hover {
+    color: var(--dark-yellow);
 }
