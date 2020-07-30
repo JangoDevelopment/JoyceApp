@@ -59,3 +59,31 @@
 .footer .icon:hover {
     color: #ffbb00;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+
+    .footer .block {
+        margin-bottom: 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer .block:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer p span {
+        color: var(--dark-yellow);
+    }
+
+    .footer .icon {
+        color: var(--dark-yellow);
+    }
+}
