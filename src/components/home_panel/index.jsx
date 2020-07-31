@@ -16,62 +16,26 @@ const HomePanel = ({ painel }) => {
     ];
 
     const Image0 = styled.div`
-        position: absolute;
-        z-index: 2;
-        right: 0;
-        height: 100vh;
-        width: 75vw;
-        opacity: 0.7;
-        clip-path: polygon(39% 0, 100% 0, 100% 100%, 15% 100%);
         background-image: url(${img0});
-        background-repeat: no-repeat;
-        background-size: cover;
     `;
 
     const Image1 = styled.div`
-        position: absolute;
-        z-index: 2;
-        right: 0;
-        height: 100vh;
-        width: 75vw;
-        opacity: 0.8;
-        clip-path: polygon(39% 0, 100% 0, 100% 100%, 15% 100%);
         background-color: #fff0f0;
         background-image: url(${img1});
-        background-repeat: no-repeat;
-        background-size: cover;
     `;
 
     const Image2 = styled.div`
-        position: absolute;
-        z-index: 2;
-        right: 0;
-        height: 100vh;
-        width: 75vw;
-        opacity: 0.7;
-        clip-path: polygon(39% 0, 100% 0, 100% 100%, 15% 100%);
         background-image: url(${img2});
-        background-repeat: no-repeat;
-        background-size: cover;
     `;
 
     const Image3 = styled.div`
-        position: absolute;
-        z-index: 2;
-        right: 0;
-        height: 100vh;
-        width: 75vw;
-        opacity: 0.7;
-        clip-path: polygon(39% 0, 100% 0, 100% 100%, 15% 100%);
         background-image: url(${img3});
-        background-repeat: no-repeat;
-        background-size: cover;
     `;
 
     const Title = styled.h2`
         font-family: "Poppins", sans-serif;
         font-weight: 600;
-        font-size: 80px;
+        font-size: 86px;
         color: ${titulos[painel].color};
     `;
 
@@ -79,13 +43,13 @@ const HomePanel = ({ painel }) => {
         <div className="home_panel">
             <div className="background">
                 <div className="overlay flex-column">
-                    <h1>arquitetura é</h1>
-                    <Title>{titulos[painel].content}</Title>
+                    <h1 className="unselectable">arquitetura é</h1>
+                    <Title className="unselectable">{titulos[painel].content}</Title>
                 </div>
-                {painel === 0 ? <Image0 /> : null}
-                {painel === 1 ? <Image1 /> : null}
-                {painel === 2 ? <Image2 /> : null}
-                {painel === 3 ? <Image3 /> : null}
+                {painel === 0 ? <Image0 className="image" /> : null}
+                {painel === 1 ? <Image1 className="image" /> : null}
+                {painel === 2 ? <Image2 className="image" /> : null}
+                {painel === 3 ? <Image3 className="image" /> : null}
             </div>
             <div className="left_triangle"></div>
         </div>
