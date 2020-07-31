@@ -3,6 +3,9 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-image: url(./images/b1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .background .overlay {
