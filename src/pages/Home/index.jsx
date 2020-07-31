@@ -4,13 +4,34 @@ import "./styles.css";
 import Footer from "../../components/footer";
 import HomePanel from "../../components/home_panel";
 
+import Carousel from "react-material-ui-carousel";
+import { Paper, Button } from "@material-ui/core";
+
+function Example(props) {
+    var items = [
+        { tela: <HomePanel painel={0} /> },
+        { tela: <HomePanel painel={1} /> },
+        { tela: <HomePanel painel={2} /> },
+        { tela: <HomePanel painel={3} /> },
+    ];
+
+    return (
+        <Carousel indicators={false} timeout={500} interval={2500}>
+            {items.map((item, i) => (
+                <Item key={i} item={item} />
+            ))}
+        </Carousel>
+    );
+}
+
+function Item(props) {
+    return <Paper>{props.item.tela}</Paper>;
+}
+
 const Home = () => {
     return (
         <div className="flex-column">
-            <HomePanel painel={0} />
-            <HomePanel painel={1} />
-            <HomePanel painel={2} />
-            <HomePanel painel={3} />
+            {Example()}
             <Footer />
         </div>
     );
