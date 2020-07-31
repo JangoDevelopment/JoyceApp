@@ -31,6 +31,7 @@ function Item(props) {
 const Home = () => {
     return (
         <div className="flex-column">
+            {/* <HomePanel painel={2} /> */}
             {Example()}
             <Footer />
         </div>

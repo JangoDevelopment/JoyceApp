@@ -46,12 +46,32 @@ const HomePanel = ({ painel }) => {
                     <h1 className="unselectable">arquitetura é</h1>
                     <Title className="unselectable">{titulos[painel].content}</Title>
                 </div>
-                {painel === 0 ? <Image0 className="image" /> : null}
-                {painel === 1 ? <Image1 className="image" /> : null}
-                {painel === 2 ? <Image2 className="image" /> : null}
-                {painel === 3 ? <Image3 className="image" /> : null}
+
+                {painel === 0 ? (
+                    <div>
+                        <img className="b1" src="" alt="" />
+                        <Image0 className="image" />
+                    </div>
+                ) : null}
+                {painel === 1 ? (
+                    <div>
+                        <img className="b2" src="" alt="" />
+                        <Image1 className="image" />
+                    </div>
+                ) : null}
+                {painel === 2 ? (
+                    <div>
+                        <img className="b3" src="" alt="" />
+                        <Image2 className="image" />
+                    </div>
+                ) : null}
+                {painel === 3 ? (
+                    <div>
+                        <img className="b4" src="" alt="" />
+                        <Image3 className="image" />
+                    </div>
+                ) : null}
             </div>
-            <div className="left_triangle"></div>
         </div>
     );
 };
