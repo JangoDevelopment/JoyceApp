@@ -1,0 +1,89 @@
+.footer {
+    width: 100%;
+    background-color: #525252;
+    min-height: 160px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.footer p {
+    font-family: "Poppins", sans-serif;
+    color: var(--light-gray);
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+
+.footer p span {
+    font-weight: 500;
+}
+
+.footer .block {
+    align-items: flex-start;
+}
+
+.footer .coffee {
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer .coffee_icon {
+    margin-left: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+
+.footer .coffee_icon:hover {
+    color: var(--dark-yellow);
+}
+
+.footer .icons {
+    width: 100%;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .icon {
+    color: #ffffff;
+    height: 35px;
+    width: 35px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.footer .icon:hover {
+    color: #ffbb00;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+
+    .footer .block {
+        margin-bottom: 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer .block:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer p span {
+        color: var(--dark-yellow);
+    }
+
+    .footer .icon {
+        color: var(--dark-yellow);
+    }
+}
