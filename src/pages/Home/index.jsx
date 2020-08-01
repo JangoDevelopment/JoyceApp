@@ -7,6 +7,7 @@ import Header from "../../components/header";
 
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@material-ui/core";
+import PersistentDrawerRight from "../../components/header/responsive";
 
 function Example(props) {
     var items = [
@@ -32,6 +33,7 @@ function Item(props) {
 const Home = () => {
     return (
         <div className="flex-column">
+            <PersistentDrawerRight />
             <Header />
             {Example()}
             <Footer />
