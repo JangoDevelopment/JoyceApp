@@ -3,9 +3,11 @@ import "./styles.css";
 // import Form from "../../components/form_contatos";
 import Footer from "../../components/footer";
 import HomePanel from "../../components/home_panel";
+import Header from "../../components/header";
 
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@material-ui/core";
+import PersistentDrawerRight from "../../components/header/responsive";
 
 function Example(props) {
     var items = [
@@ -31,7 +33,8 @@ function Item(props) {
 const Home = () => {
     return (
         <div className="flex-column">
-            {/* <HomePanel painel={2} /> */}
+            <PersistentDrawerRight />
+            <Header />
             {Example()}
             <Footer />
         </div>
