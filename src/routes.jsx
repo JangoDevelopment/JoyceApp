@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter, Switch } from "react-router-dom";
+import { Route, BrowserRouter, HashRouter, Switch } from "react-router-dom";
 
 /****IMPORT PAGES******/
 
@@ -10,14 +10,14 @@ import Apresentacao from "./pages/Apresentacao";
 
 const Routes = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 <Route component={Home} exact path="/" />
                 <Route component={Contact} exact path="/contato" />
                 <Route component={Portifolio} exact path="/portifolio" />
                 <Route component={Apresentacao} exact path="/apresentacao" />
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 
