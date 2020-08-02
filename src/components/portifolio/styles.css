@@ -27,6 +27,15 @@
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
     border-radius: 4px;
     transition: ease-in-out 0.3s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.portifolio .parte1 .box img {
+    opacity: 0.8;
+    width: 55%;
+    height: auto;
 }
 
 .portifolio .parte1 .box .title {
