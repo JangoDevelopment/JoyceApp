@@ -15,7 +15,9 @@ const Header = (props) => {
                 <Link className="link" to={"/"}>
                     <li className="unselectable">Home</li>
                 </Link>
-                <li className="unselectable">Apresentação</li>
+                <Link className="link" to={"/apresentacao"}>
+                    <li className="unselectable">Apresentação</li>
+                </Link>
                 <Link className="link" to={"/portifolio"}>
                     <li className="unselectable">Portifolio</li>
                 </Link>
