@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/JoyceApp/static/css/main.379ffcc1.chunk.css",
+    "main.js": "/JoyceApp/static/js/main.d700db33.chunk.js",
+    "main.js.map": "/JoyceApp/static/js/main.d700db33.chunk.js.map",
+    "runtime-main.js": "/JoyceApp/static/js/runtime-main.933704a9.js",
+    "runtime-main.js.map": "/JoyceApp/static/js/runtime-main.933704a9.js.map",
+    "static/js/2.f42be9cd.chunk.js": "/JoyceApp/static/js/2.f42be9cd.chunk.js",
+    "static/js/2.f42be9cd.chunk.js.map": "/JoyceApp/static/js/2.f42be9cd.chunk.js.map",
+    "index.html": "/JoyceApp/index.html",
+    "precache-manifest.37b2ab4ceb8eb3aef310594bdfe639b1.js": "/JoyceApp/precache-manifest.37b2ab4ceb8eb3aef310594bdfe639b1.js",
+    "service-worker.js": "/JoyceApp/service-worker.js",
+    "static/css/main.379ffcc1.chunk.css.map": "/JoyceApp/static/css/main.379ffcc1.chunk.css.map",
+    "static/js/2.f42be9cd.chunk.js.LICENSE.txt": "/JoyceApp/static/js/2.f42be9cd.chunk.js.LICENSE.txt",
+    "static/media/0.jpg": "/JoyceApp/static/media/0.4afbf01e.jpg",
+    "static/media/styles.css": "/JoyceApp/static/media/b2.7e271ece.png",
+    "static/media/1.png": "/JoyceApp/static/media/1.907db66a.png",
+    "static/media/2.jpg": "/JoyceApp/static/media/2.c079f15f.jpg",
+    "static/media/3.jpg": "/JoyceApp/static/media/3.bb72b3d9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.933704a9.js",
+    "static/js/2.f42be9cd.chunk.js",
+    "static/css/main.379ffcc1.chunk.css",
+    "static/js/main.d700db33.chunk.js"
+  ]
+}
