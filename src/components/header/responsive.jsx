@@ -18,7 +18,6 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { RiHomeLine } from "react-icons/ri";
 import { MdAssignmentInd } from "react-icons/md";
 import { FiLayers, FiCoffee } from "react-icons/fi";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
 
 const drawerWidth = 240;
 
