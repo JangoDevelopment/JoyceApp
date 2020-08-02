@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/joyceapp/static/css/main.c6a91778.chunk.css",
-    "main.js": "/joyceapp/static/js/main.d700db33.chunk.js",
-    "main.js.map": "/joyceapp/static/js/main.d700db33.chunk.js.map",
+    "main.js": "/joyceapp/static/js/main.af6dba17.chunk.js",
+    "main.js.map": "/joyceapp/static/js/main.af6dba17.chunk.js.map",
     "runtime-main.js": "/joyceapp/static/js/runtime-main.85de0b93.js",
     "runtime-main.js.map": "/joyceapp/static/js/runtime-main.85de0b93.js.map",
-    "static/js/2.840c3f6c.chunk.js": "/joyceapp/static/js/2.840c3f6c.chunk.js",
-    "static/js/2.840c3f6c.chunk.js.map": "/joyceapp/static/js/2.840c3f6c.chunk.js.map",
+    "static/js/2.42a36695.chunk.js": "/joyceapp/static/js/2.42a36695.chunk.js",
+    "static/js/2.42a36695.chunk.js.map": "/joyceapp/static/js/2.42a36695.chunk.js.map",
     "index.html": "/joyceapp/index.html",
-    "precache-manifest.2405a3dd41150735cbfe6ba18826c8e9.js": "/joyceapp/precache-manifest.2405a3dd41150735cbfe6ba18826c8e9.js",
+    "precache-manifest.fdb4e10cc78d8705cfa1ba6a5b824f47.js": "/joyceapp/precache-manifest.fdb4e10cc78d8705cfa1ba6a5b824f47.js",
     "service-worker.js": "/joyceapp/service-worker.js",
     "static/css/main.c6a91778.chunk.css.map": "/joyceapp/static/css/main.c6a91778.chunk.css.map",
-    "static/js/2.840c3f6c.chunk.js.LICENSE.txt": "/joyceapp/static/js/2.840c3f6c.chunk.js.LICENSE.txt",
+    "static/js/2.42a36695.chunk.js.LICENSE.txt": "/joyceapp/static/js/2.42a36695.chunk.js.LICENSE.txt",
     "static/media/0.jpg": "/joyceapp/static/media/0.4afbf01e.jpg",
     "static/media/styles.css": "/joyceapp/static/media/b2.7e271ece.png",
     "static/media/1.png": "/joyceapp/static/media/1.907db66a.png",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.85de0b93.js",
-    "static/js/2.840c3f6c.chunk.js",
+    "static/js/2.42a36695.chunk.js",
     "static/css/main.c6a91778.chunk.css",
-    "static/js/main.d700db33.chunk.js"
+    "static/js/main.af6dba17.chunk.js"
   ]
 }
