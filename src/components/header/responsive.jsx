@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import AppBar from "@material-ui/core/AppBar";
@@ -137,13 +138,17 @@ export default function PersistentDrawerRight() {
                 <List>
                     {["Home", "Apresentação", "Portifólio", "Contato"].map((text, index) => (
                         <ListItem button key={text}>
-                            <ListItemIcon>
-                                {index === 0 ? <RiHomeLine className={classes.icon} /> : null}
-                                {index === 1 ? <MdAssignmentInd className={classes.icon} /> : null}
-                                {index === 2 ? <FiLayers className={classes.icon} /> : null}
-                                {index === 3 ? <FiCoffee className={classes.icon} /> : null}
-                            </ListItemIcon>
-                            <ListItemText primary={text} />
+                            <Link
+                                className="unselectable link flex"
+                                to={index === 0 ? "/" : index === 1 ? "/apresentacao" : index === 2 ? "portifolio" : "/contato"}>
+                                <ListItemIcon>
+                                    {index === 0 ? <RiHomeLine className={classes.icon} /> : null}
+                                    {index === 1 ? <MdAssignmentInd className={classes.icon} /> : null}
+                                    {index === 2 ? <FiLayers className={classes.icon} /> : null}
+                                    {index === 3 ? <FiCoffee className={classes.icon} /> : null}
+                                </ListItemIcon>
+                                <ListItemText primary={text} />
+                            </Link>
                         </ListItem>
                     ))}
                 </List>
