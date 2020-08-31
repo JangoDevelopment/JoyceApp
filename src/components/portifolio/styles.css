@@ -134,6 +134,12 @@
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
     border-radius: 4px;
     background-color: #626397;
+    transition: all 0.2s;
+}
+
+.portifolio .project_galery .project:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
 }
 
 .portifolio .project_galery .project .project_name {
