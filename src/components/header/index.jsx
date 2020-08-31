@@ -9,6 +9,7 @@ const Header = (props) => {
                 <img src="" alt="" />
                 <Link className="titulo" to={"/"}>
                     <h1 className="titulo unselectable">Joyce Caçador</h1>
+                    <h2 className="subtitulo unselectable">Arquitetura e Urbanismo</h2>
                 </Link>
             </div>
             <ul className="flex">

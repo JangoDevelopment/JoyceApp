@@ -25,7 +25,16 @@
 }
 
 .header .logo .titulo {
-    font-size: 18px;
+    font-size: 17.5px;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header .logo .subtitulo {
+    font-size: 10px;
     color: #000000;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
