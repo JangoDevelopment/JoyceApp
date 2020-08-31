@@ -1,4 +1,7 @@
 import React from "react";
+import img1 from "./images/1.png";
+import img2 from "./images/2.png";
+import img3 from "./images/3.png";
 import "./styles.css";
 
 const PortifolioComponent = (props) => {
@@ -7,7 +10,7 @@ const PortifolioComponent = (props) => {
             <div className="parte1 flex">
                 <div className="section flex-column">
                     <div className="box flex block_1">
-                        <img className="unselectable" src="./images/portifolio/1.png" alt="" />
+                        <img className="unselectable box_img" src={img1} alt="" />
                         <h3 className="title unselectable">projetos</h3>
                     </div>
                     <div className="description">
@@ -16,7 +19,7 @@ const PortifolioComponent = (props) => {
                 </div>
                 <div className="section flex-column">
                     <div className="box flex block_2">
-                        <img className="unselectable" src="./images/portifolio/2.png" alt="" />
+                        <img className="unselectable box_img" src={img2} alt="" />
                         <h3 className="title unselectable">reformas</h3>
                     </div>
                     <div className="description">
@@ -25,7 +28,7 @@ const PortifolioComponent = (props) => {
                 </div>
                 <div className="section flex-column">
                     <div className="box flex block_3">
-                        <img className="unselectable" src="./images/portifolio/3.png" alt="" />
+                        <img className="unselectable box_img" src={img3} alt="" />
                         <h3 className="title unselectable">acessoria de obras</h3>
                     </div>
                     <div className="description">
