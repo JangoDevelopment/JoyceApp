@@ -16,7 +16,7 @@ const PortifolioComponent = (props) => {
         <div className="portifolio">
             <div className="parte1 flex">
                 <div className="section flex-column">
-                    <Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500}>
+                    <Link activeClass="active" to="test1" spy={true} smooth={true} duration={500} offset={-50}>
                         <div className="box flex block_1">
                             <img className="unselectable box_img" src={img1} alt="" />
                             <h3 className="title unselectable">projetos</h3>
@@ -46,27 +46,20 @@ const PortifolioComponent = (props) => {
                 </div>
             </div>
             <div name="test1" className="projetos flex-column">
-                <h1 className="section_title">Projetos</h1>
-                <div className="parte1 flex">
-                    <div className="section flex-column">
-                        <Link activeClass="active" className="test1" to="residencial" spy={true} smooth={true} duration={500}>
-                            <div className="box flex block_1">
-                                <h3 className="title unselectable">residencial</h3>
-                            </div>
+                <div className="subsection">
+                    <h1 className="section_title">Projetos</h1>
+                    <h4 className="section_description">{description_residencial}</h4>
+                    <div className="section_options flex">
+                        <Link className="section_box flex block_1" activeClass="active" to="residencial" spy={true} smooth={true} duration={500}>
+                            <h3 className="title unselectable">residencial</h3>
                         </Link>
-                    </div>
-                    <div className="section flex-column">
-                        <Link activeClass="active" className="test1" to="comercial" spy={true} smooth={true} duration={500}>
-                            <div className="box flex block_2">
-                                <h3 className="title unselectable">comercial</h3>
-                            </div>
+
+                        <Link className="section_box flex block_2" activeClass="active" to="comercial" spy={true} smooth={true} duration={500}>
+                            <h3 className="title unselectable">comercial</h3>
                         </Link>
-                    </div>
-                    <div className="section flex-column">
-                        <Link activeClass="active" className="test1" to="interiores" spy={true} smooth={true} duration={500}>
-                            <div className="box flex block_3">
-                                <h3 className="title unselectable">interiores</h3>
-                            </div>
+
+                        <Link className="section_box flex block_3" activeClass="active" to="interiores" spy={true} smooth={true} duration={500}>
+                            <h3 className="title unselectable">interiores</h3>
                         </Link>
                     </div>
                 </div>

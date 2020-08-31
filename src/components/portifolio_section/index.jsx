@@ -3,7 +3,7 @@ import "./styles.css";
 
 /**
  *
- * @param {string} section_title O titulo que sera escrrito em maior fonte no bloco
+ * @param {string} section_title O titulo que sera escrito em maior fonte no bloco
  * @param {string} section_description O texto que virá abaixo do titulo explicando um pouco sobre o bloco
  * @param {object} section_list um objeto que contenha todos os projetos dessa sessão
  *

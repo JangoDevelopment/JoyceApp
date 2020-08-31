@@ -65,30 +65,36 @@
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
 }
 
-.portifolio .parte1 .block_1 {
+.portifolio .block_1 {
     background-color: #64adb7;
 }
-.portifolio .parte1 .block_2 {
+.portifolio .block_2 {
     background-color: #ff5d5d;
 }
-.portifolio .parte1 .block_3 {
+.portifolio .block_3 {
     background-color: #ffd955;
 }
 
 .portifolio .section_title {
     text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 40px;
 }
 
+.portifolio .section_description {
+    text-align: left;
+    margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 .portifolio .subsection {
     min-height: 100vh;
-    padding-top: 10vh;
+    padding-top: 14vh;
     margin-left: 10%;
     margin-right: 10%;
     display: flex-column;
@@ -118,12 +124,33 @@
     justify-content: left;
 }
 
-.portifolio .projetos .parte1 {
-    min-height: 0;
+.portifolio .projetos .section_options {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.portifolio .projetos .box {
-    height: 250px;
+.portifolio .projetos .section_options .section_box {
+    height: 50vh;
+    width: 32%;
+    position: relative;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    transition: ease-in-out 0.3s;
+}
+.portifolio .projetos .section_options .section_box:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+}
+
+.portifolio .projetos .section_options .section_box .title {
+    bottom: 30px;
+    right: 30px;
+    font-size: 24px;
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
 }
 
 .portifolio .project_galery {
