@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 /**
@@ -16,9 +17,9 @@ const PortifolioSection = ({ section_title, section_description, section_list })
             <h4 className="subsection_description">{section_description}</h4>
             <div className="project_galery flex">
                 {section_list.map((item, i) => (
-                    <div key={i} className="project">
+                    <Link key={i} className="project" to={`/portifolio/${section_title}/${item.name}`}>
                         <h3 className="project_name unselectable">{item.name}</h3>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
