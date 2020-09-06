@@ -17,7 +17,7 @@ const PortifolioSection = ({ section_title, section_description, section_list })
             <h4 className="subsection_description">{section_description}</h4>
             <div className="project_galery flex">
                 {section_list.map((item, i) => (
-                    <Link key={i} className="project" to={`/portifolio/${section_title}/${item.name}`}>
+                    <Link key={i} className="project" to={`/projeto/${section_title}/${item.name}`}>
                         <h3 className="project_name unselectable">{item.name}</h3>
                     </Link>
                 ))}
