@@ -5,6 +5,11 @@
     width: 100%;
 }
 
+.portifolio .grey_block {
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
 .portifolio .parte1 {
     width: 100%;
     min-height: 100vh;

@@ -27,40 +27,46 @@ const PortifolioComponent = (props) => {
                     </div>
                 </div>
                 <div className="section flex-column">
-                    <div className="box flex block_2">
-                        <img className="unselectable box_img" src={img2} alt="" />
-                        <h3 className="title unselectable">reformas</h3>
-                    </div>
-                    <div className="description">
-                        <p>Precisando de uma cara nova pro seu espaço?--- Se seu ambiente/imóvel está precisando ser adaptado...</p>
-                    </div>
+                    <Link activeClass="active" to="reforma" spy={true} smooth={true} duration={500} offset={-50}>
+                        <div className="box flex block_2">
+                            <img className="unselectable box_img" src={img2} alt="" />
+                            <h3 className="title unselectable">reformas</h3>
+                        </div>
+                        <div className="description">
+                            <p>Precisando de uma cara nova pro seu espaço?--- Se seu ambiente/imóvel está precisando ser adaptado...</p>
+                        </div>
+                    </Link>
                 </div>
                 <div className="section flex-column">
-                    <div className="box flex block_3">
-                        <img className="unselectable box_img" src={img3} alt="" />
-                        <h3 className="title unselectable">acessoria de obras</h3>
-                    </div>
-                    <div className="description">
-                        <p>Trabalhamos com visitas técnicas e cronogramas de obras. Acreditamos que o sucesso de uma obra...</p>
-                    </div>
+                    <Link activeClass="active" to="obras" spy={true} smooth={true} duration={500} offset={-50}>
+                        <div className="box flex block_3">
+                            <img className="unselectable box_img" src={img3} alt="" />
+                            <h3 className="title unselectable">acessoria de obras</h3>
+                        </div>
+                        <div className="description">
+                            <p>Trabalhamos com visitas técnicas e cronogramas de obras. Acreditamos que o sucesso de uma obra...</p>
+                        </div>
+                    </Link>
                 </div>
             </div>
             <div name="test1" className="projetos flex-column">
-                <div className="subsection">
-                    <h1 className="section_title">Projetos</h1>
-                    <h4 className="section_description">{description_residencial}</h4>
-                    <div className="section_options flex">
-                        <Link className="section_box flex block_1" activeClass="active" to="residencial" spy={true} smooth={true} duration={500}>
-                            <h3 className="title unselectable">residencial</h3>
-                        </Link>
+                <div className="grey_block">
+                    <div className="subsection">
+                        <h1 className="section_title">Projetos</h1>
+                        <h4 className="section_description">{description_residencial}</h4>
+                        <div className="section_options flex">
+                            <Link className="section_box flex block_1" activeClass="active" to="residencial" spy={true} smooth={true} duration={500}>
+                                <h3 className="title unselectable">residencial</h3>
+                            </Link>
 
-                        <Link className="section_box flex block_2" activeClass="active" to="comercial" spy={true} smooth={true} duration={500}>
-                            <h3 className="title unselectable">comercial</h3>
-                        </Link>
+                            <Link className="section_box flex block_2" activeClass="active" to="comercial" spy={true} smooth={true} duration={500}>
+                                <h3 className="title unselectable">comercial</h3>
+                            </Link>
 
-                        <Link className="section_box flex block_3" activeClass="active" to="interiores" spy={true} smooth={true} duration={500}>
-                            <h3 className="title unselectable">interiores</h3>
-                        </Link>
+                            <Link className="section_box flex block_3" activeClass="active" to="interiores" spy={true} smooth={true} duration={500}>
+                                <h3 className="title unselectable">interiores</h3>
+                            </Link>
+                        </div>
                     </div>
                 </div>
 
@@ -74,11 +80,13 @@ const PortifolioComponent = (props) => {
                     <PortifolioSection section_title={"interiores"} section_list={gallery} section_description={description_residencial} />
                 </div>
             </div>
-            <div className="reformas">
-                <h1>Reformas</h1>
+            <div className="grey_block">
+                <div name="reforma" className="subsection">
+                    <PortifolioSection section_title={"Reformas"} section_list={gallery} section_description={description_residencial} />
+                </div>
             </div>
-            <div className="obras">
-                <h1>Acessoria de Obras</h1>
+            <div name="obras" className="subsection">
+                <PortifolioSection section_title={"Acessoria de Obras"} section_list={gallery} section_description={description_residencial} />
             </div>
         </div>
     );
