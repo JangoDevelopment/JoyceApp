@@ -52,7 +52,7 @@ const PortifolioComponent = (props) => {
             <div name="test1" className="projetos flex-column">
                 <div className="grey_block">
                     <div className="subsection">
-                        <h1 className="section_title">Projetos</h1>
+                        <h1 className="section_title blue">Projetos</h1>
                         <h4 className="section_description">{description_residencial}</h4>
                         <div className="section_options flex">
                             <Link className="section_box flex block_1" activeClass="active" to="residencial" spy={true} smooth={true} duration={500}>

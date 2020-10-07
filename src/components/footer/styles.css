@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     background-color: #525252;
-    min-height: 160px;
+    height: 16vh;
     align-items: center;
     justify-content: space-between;
     padding-left: 15%;

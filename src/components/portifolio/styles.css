@@ -65,6 +65,10 @@
     margin-right: 15px;
 }
 
+.blue {
+    color: #e7f3f5;
+}
+
 .portifolio .parte1 .box:hover {
     transform: scale(1.01);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
