@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles.css";
 
+import curriculo from "../../data/curriculo.js";
+
 const ApresentacaoComponent = (props) => {
     return (
         <div className="apresentacao flex-column">
@@ -18,6 +20,28 @@ const ApresentacaoComponent = (props) => {
             <div className="block_2">
                 <div className="info">
                     <h1>curriculo</h1>
+                    <div className="scrollable">
+                        <section className="curriculo flex-column">
+                            <h2 className="section_title">Formação</h2>
+                            <div className="curso flex-column">
+                                <h3 className="titulo">Graduada em Arquitetura e Urbanismo pela Pontifícia Universidade Católica de Campinas</h3>
+                                <h4 className="local">PUC Campinas</h4>
+                            </div>
+                        </section>
+                        <section className="curriculo flex-column">
+                            <h2 className="section_title">Cursos</h2>
+                            {curriculo.map((curso) => {
+                                return (
+                                    <div className="curso flex-column">
+                                        <h3 className="titulo">{curso.titulo}</h3>
+                                        <h4 className="local">{curso.local}</h4>
+                                        <h4 className="carga">{curso.carga}</h4>
+                                        <h4 className="enfase">{curso.enfase}</h4>
+                                    </div>
+                                );
+                            })}
+                        </section>
+                    </div>
                 </div>
                 <div className="background_image"></div>
             </div>
