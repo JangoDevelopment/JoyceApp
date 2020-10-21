@@ -11,14 +11,16 @@ import "./styles.css";
  */
 
 const PortifolioSection = ({ section_title, section_description, section_list }) => {
+    const lowercase_section = section_title.toLowerCase();
+
     return (
         <div>
             <h2 className="subsection_title">{section_title}</h2>
             <h4 className="subsection_description">{section_description}</h4>
             <div className="project_galery flex">
                 {section_list.map((item, i) => (
-                    <Link key={i} className="project" to={`/projeto/${section_title}/${item.name}`}>
-                        <h3 className="project_name unselectable">{item.name}</h3>
+                    <Link key={i} className="project" to={`/projeto/${lowercase_section}/${item.id}`}>
+                        <h3 className="project_name unselectable">{item.titulo}</h3>
                     </Link>
                 ))}
             </div>

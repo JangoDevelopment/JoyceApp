@@ -6,7 +6,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import PortifolioSection from "../portifolio_section";
 import "./styles.css";
 
-const gallery = [{ name: "project 0" }, { name: "project 2" }, { name: "project 3" }, { name: "project 4" }, { name: "project 5" }, { name: "project 6" }];
+import projetos from "../../data/projetos";
 
 const PortifolioComponent = (props) => {
     const description_residencial =
@@ -52,7 +52,7 @@ const PortifolioComponent = (props) => {
             <div name="test1" className="projetos flex-column">
                 <div className="grey_block">
                     <div className="subsection">
-                        <h1 className="section_title blue">Projetos</h1>
+                        <h1 className="section_title">Projetos</h1>
                         <h4 className="section_description">{description_residencial}</h4>
                         <div className="section_options flex">
                             <Link className="section_box flex block_1" activeClass="active" to="residencial" spy={true} smooth={true} duration={500}>
@@ -71,22 +71,22 @@ const PortifolioComponent = (props) => {
                 </div>
 
                 <div name="residencial" className="subsection">
-                    <PortifolioSection section_title={"residencial"} section_list={gallery} section_description={description_residencial} />
+                    <PortifolioSection section_title={"residencial"} section_list={projetos.residencial} section_description={description_residencial} />
                 </div>
                 <div name="comercial" className="subsection">
-                    <PortifolioSection section_title={"comercial"} section_list={gallery} section_description={description_residencial} />
+                    <PortifolioSection section_title={"comercial"} section_list={projetos.comercial} section_description={description_residencial} />
                 </div>
                 <div name="interiores" className="subsection">
-                    <PortifolioSection section_title={"interiores"} section_list={gallery} section_description={description_residencial} />
+                    <PortifolioSection section_title={"interiores"} section_list={projetos.interiores} section_description={description_residencial} />
                 </div>
             </div>
             <div className="grey_block">
                 <div name="reforma" className="subsection">
-                    <PortifolioSection section_title={"Reformas"} section_list={gallery} section_description={description_residencial} />
+                    <PortifolioSection section_title={"Reformas"} section_list={projetos.reformas} section_description={description_residencial} />
                 </div>
             </div>
             <div name="obras" className="subsection">
-                <PortifolioSection section_title={"Acessoria de Obras"} section_list={gallery} section_description={description_residencial} />
+                <PortifolioSection section_title={"Acessoria de Obras"} section_list={projetos.obras} section_description={description_residencial} />
             </div>
         </div>
     );
