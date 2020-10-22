@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 
@@ -11,7 +11,21 @@ import "./styles.css";
  */
 
 const PortifolioSection = ({ section_title, section_description, section_list }) => {
-    const lowercase_section = section_title.toLowerCase();
+    const comercial_1 = require("../../images/capas/comercial_1.jpg");
+    const comercial_2 = require("../../images/capas/comercial_2.jpg");
+    const comercial_3 = require("../../images/capas/comercial_2.jpg");
+    const interiores_1 = require("../../images/capas/interiores_1.png");
+    const reformas_1 = require("../../images/capas/reformas_1.jpg");
+    const reformas_2 = require("../../images/capas/reformas_1.jpg");
+    const obras_1 = require("../../images/capas/reformas_1.jpg");
+    const obras_2 = require("../../images/capas/reformas_1.jpg");
+    const residencial_1 = require("../../images/capas/residencial_1.jpg");
+
+    let lowercase_section = section_title.toLowerCase();
+
+    if (lowercase_section === "acessoria de obras") {
+        lowercase_section = "obras";
+    }
 
     return (
         <div>
@@ -20,6 +34,7 @@ const PortifolioSection = ({ section_title, section_description, section_list })
             <div className="project_galery flex">
                 {section_list.map((item, i) => (
                     <Link key={i} className="project" to={`/projeto/${lowercase_section}/${item.id}`}>
+                        <img src={eval(`${lowercase_section}_${item.id}`)} alt="projeto_capa" />
                         <h3 className="project_name unselectable">{item.titulo}</h3>
                     </Link>
                 ))}

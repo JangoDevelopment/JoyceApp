@@ -10,7 +10,6 @@ const PaginaComponente = (props) => {
     const categoria = projetos[`${splicedParams[2]}`];
 
     const projeto = categoria.find((x) => x.id === parseInt(splicedParams[3]));
-
     console.log("here", projeto);
 
     return (
