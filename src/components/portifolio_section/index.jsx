@@ -10,6 +10,10 @@ import "./styles.css";
  *
  */
 
+import img1 from "../portifolio/images/1.png";
+import img2 from "../portifolio/images/2.png";
+import img3 from "../portifolio/images/3.png";
+
 const PortifolioSection = ({ section_title, section_description, section_list }) => {
     const comercial_1 = require("../../images/capas/comercial_1.jpg");
     const comercial_2 = require("../../images/capas/comercial_2.jpg");
@@ -22,6 +26,7 @@ const PortifolioSection = ({ section_title, section_description, section_list })
     const residencial_1 = require("../../images/capas/residencial_1.jpg");
 
     let lowercase_section = section_title.toLowerCase();
+    let uppercase_section = section_title.toUpperCase();
 
     if (lowercase_section === "acessoria de obras") {
         lowercase_section = "obras";
@@ -29,7 +34,14 @@ const PortifolioSection = ({ section_title, section_description, section_list })
 
     return (
         <div>
-            <h2 className="subsection_title">{section_title}</h2>
+            <div className="flex title_line">
+                {lowercase_section === "obras" || lowercase_section === "reformas" ? (
+                    <img class="section_icon" src={lowercase_section === "obras" ? img3 : img2} alt="" />
+                ) : (
+                    false
+                )}
+                <h2 className="subsection_title">{lowercase_section === "obras" || lowercase_section === "reformas" ? uppercase_section : section_title}</h2>
+            </div>
             <h4 className="subsection_description">{section_description}</h4>
             <div className="project_galery flex">
                 {section_list.map((item, i) => (
