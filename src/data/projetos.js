@@ -58,7 +58,7 @@ export default {
             ano: 2019,
             descricao:
                 "A casa MC foi construída há mais de 60 anos. Os cômodos eram mal divididos, as paredes precisavam de reboco novo, o piso era de chão batido, entre outras coisas. O Desafio foi transformar essa casa em uma casa atual com ambientes integrados, suíte e quartos confortáveis. Veja fotos do antes e depois.",
-            capa: "images/capas/reformas_1.png",
+            capa: "images/capas/reformas_1.jpg",
         },
         {
             id: 2,

@@ -9,9 +9,9 @@ import img3 from "./images/3.jpg";
 
 const HomePanel = ({ painel }) => {
     const titulos = [
-        { id: 0, content: "inovar", color: "#FEC90E" },
+        { id: 0, content: "desenhar sonhos", color: "#FEC90E" },
         { id: 1, content: "planejamento", color: "#EA7979" },
-        { id: 2, content: "qualidade de vida", color: "#609BA3" },
+        { id: 2, content: "você conectado com seu lar", color: "#609BA3" },
         { id: 3, content: "funcionalidade", color: "#50967F" },
     ];
 

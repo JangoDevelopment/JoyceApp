@@ -11,8 +11,7 @@ const ApresentacaoComponent = (props) => {
                     <h1>valores</h1>
                     <p>
                         Apaixonada pelo meu trabalho, acredito que a Arquitetura e o Urbanismo tem o poder de transformar vidas. Minha missão é apresentar o
-                        melhor resultado dentro dos parâmetros desejados e buscar sempre as melhores soluções para o cliente.Acredito que um projeto bem pensado
-                        em sua essência desenvolve obras sem dores de cabeça.
+                        melhor resultado dentro dos parâmetros desejados e buscar sempre as melhores soluções para o cliente.
                     </p>
                 </div>
                 <div className="background_image"></div>
@@ -40,6 +39,26 @@ const ApresentacaoComponent = (props) => {
                                     </div>
                                 );
                             })}
+                        </section>
+                        <section className="curriculo flex-column">
+                            <h2 className="section_title">Experiência Profissional</h2>
+                            <div className="curso flex-column">
+                                <h3 className="titulo">Ricardo Rabello Arquiteto</h3>
+                                <h4 className="carga">Cargo: Estagiária</h4>
+                                <h4 className="enfase">1 ano e 3 meses</h4>
+                            </div>
+                            <div className="curso flex-column">
+                                <h3 className="titulo">Prefeitura de Campinas: Plano de Desenvolvimento da Fazenda Candido Ferreira</h3>
+                                <h4 className="carga">Cargo: Estagiária</h4>
+                                <h4 className="enfase">4 meses</h4>
+                            </div>
+                        </section>
+                        <section className="curriculo flex-column">
+                            <h2 className="section_title">Seminários</h2>
+                            <div className="curso flex-column">
+                                <h3 className="titulo">II Seminário de Urbanização de Favelas </h3>
+                                <h4 className="local">Rio de Janeiro, novembro de 2016</h4>
+                            </div>
                         </section>
                     </div>
                 </div>
