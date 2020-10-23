@@ -57,28 +57,42 @@ const PortifolioComponent = (props) => {
                         </div>
                         <h4 className="section_description">{description_residencial}</h4>
                         <div className="section_options flex">
-                            <Link className="section_box flex block_1" activeClass="active" to="residencial" spy={true} smooth={true} duration={500}>
+                            <Link
+                                className="section_box flex block_1"
+                                activeClass="active"
+                                to="residencial"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-50}>
                                 <h3 className="title unselectable">residencial</h3>
                             </Link>
 
-                            <Link className="section_box flex block_2" activeClass="active" to="comercial" spy={true} smooth={true} duration={500}>
+                            <Link className="section_box flex block_2" activeClass="active" to="comercial" spy={true} smooth={true} duration={500} offset={-50}>
                                 <h3 className="title unselectable">comercial</h3>
                             </Link>
 
-                            <Link className="section_box flex block_3" activeClass="active" to="interiores" spy={true} smooth={true} duration={500}>
+                            <Link
+                                className="section_box flex block_3"
+                                activeClass="active"
+                                to="interiores"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-50}>
                                 <h3 className="title unselectable">interiores</h3>
                             </Link>
                         </div>
                     </div>
                 </div>
 
-                <div name="residencial" className="subsection">
+                <div name="residencial" className="sub_subsection">
                     <PortifolioSection section_title={"residencial"} section_list={projetos.residencial} section_description={vazio} />
                 </div>
-                <div name="comercial" className="subsection">
+                <div name="comercial" className="sub_subsection">
                     <PortifolioSection section_title={"comercial"} section_list={projetos.comercial} section_description={vazio} />
                 </div>
-                <div name="interiores" className="subsection">
+                <div name="interiores" className="sub_subsection">
                     <PortifolioSection section_title={"interiores"} section_list={projetos.interiores} section_description={vazio} />
                 </div>
             </div>
