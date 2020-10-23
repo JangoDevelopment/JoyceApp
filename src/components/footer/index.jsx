@@ -7,8 +7,8 @@ const Footer = (props) => {
     return (
         <footer className="footer flex">
             <div className="block address flex-column">
-                <p>Rua das Laranjeiras, n 711</p>
-                <p>Bairro do Limoeiro</p>
+                <p>Rua Monsenhor Aníbal de Melo, n 206</p>
+                <p>Pedregulho</p>
                 <p>Guaratingueta, Sao Paulo</p>
             </div>
             <div className="block contact flex-column">
@@ -16,9 +16,9 @@ const Footer = (props) => {
                     <p>Vamos tomar um café?</p>
                     <FaCoffee className="coffee_icon" />
                 </div>
-                <p>fulana@gmail.com</p>
+                <p>joy.cacador@gmail.com</p>
                 <p>
-                    <span>(12)</span> 9 9187 - 7727
+                    <span>(12)</span> 9 8147 - 0468
                 </p>
             </div>
             <div className="block info flex-column">
