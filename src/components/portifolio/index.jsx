@@ -10,43 +10,42 @@ import projetos from "../../data/projetos";
 
 const PortifolioComponent = (props) => {
     const description_residencial =
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem pulvinar, interdum odio quis, sollicitudin sapien. Donec ullamcorper convallis urna, eu gravida nulla faucibus tristique. Nunc mollis pulvinar purus, sit amet aliquam nulla dignissim et. Duis posuere, enim ac tempor venenatis, orci eros blandit nibh, sed sollicitudin ante erat id lacus.";
+        "Você tem um sonho e não sabe por onde começar? \n Comece por um projeto que tenha a sua identidade. \n Da residência aos projetos comerciais, aqui pensamos em um projeto funcional e esteticamente agradável sobre medida para você. ";
+    const description_reformas =
+        "Precisando dar uma cara nova pro seu espaço?\n Se seu ambiente/imóvel está precisando ser adaptado ou ganhar novo significado pode contar com nossa criatividade. \nDerrubando paredes ou respeitando a história do lugar, acharemos a melhor solução de acordo com as suas necessidades.";
+    const description_obras =
+        "O sucesso de uma obra envolve dedicação e um bom planejamento. \nTrabalhamos com visitas técnicas, cronograma de obras e planilha orçamentária. ";
+    const vazio = "";
 
     return (
         <div className="portifolio">
-            <div className="parte1 flex">
-                <div className="section flex-column">
-                    <Link activeClass="active" to="test1" spy={true} smooth={true} duration={500} offset={-50}>
-                        <div className="box flex block_1">
-                            <img className="unselectable box_img" src={img1} alt="" />
-                            <h3 className="title unselectable">projetos</h3>
-                        </div>
-                    </Link>
-                    <div className="description">
-                        <p>Você tem um sonho e não sabe por onde começar? Comece por um projeto que tenha a sua ...</p>
+            <div className="parte1 flex-column">
+                <h1 className="section_title parte1_title">Veja nossas diferentes sessões de projetos </h1>
+                <div className="flex first_panel">
+                    <div className="section flex-column">
+                        <Link activeClass="active" to="test1" spy={true} smooth={true} duration={500} offset={-50}>
+                            <div className="box flex block_1">
+                                <img className="unselectable box_img" src={img1} alt="" />
+                                <h3 className="title unselectable">projetos</h3>
+                            </div>
+                        </Link>
                     </div>
-                </div>
-                <div className="section flex-column">
-                    <Link activeClass="active" to="reforma" spy={true} smooth={true} duration={500} offset={-50}>
-                        <div className="box flex block_2">
-                            <img className="unselectable box_img" src={img2} alt="" />
-                            <h3 className="title unselectable">reformas</h3>
-                        </div>
-                        <div className="description">
-                            <p>Precisando de uma cara nova pro seu espaço?--- Se seu ambiente/imóvel está precisando ser adaptado...</p>
-                        </div>
-                    </Link>
-                </div>
-                <div className="section flex-column">
-                    <Link activeClass="active" to="obras" spy={true} smooth={true} duration={500} offset={-50}>
-                        <div className="box flex block_3">
-                            <img className="unselectable box_img" src={img3} alt="" />
-                            <h3 className="title unselectable">acessoria de obras</h3>
-                        </div>
-                        <div className="description">
-                            <p>Trabalhamos com visitas técnicas e cronogramas de obras. Acreditamos que o sucesso de uma obra...</p>
-                        </div>
-                    </Link>
+                    <div className="section flex-column">
+                        <Link activeClass="active" to="reforma" spy={true} smooth={true} duration={500} offset={-50}>
+                            <div className="box flex block_2">
+                                <img className="unselectable box_img" src={img2} alt="" />
+                                <h3 className="title unselectable">reformas</h3>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="section flex-column">
+                        <Link activeClass="active" to="obras" spy={true} smooth={true} duration={500} offset={-50}>
+                            <div className="box flex block_3">
+                                <img className="unselectable box_img" src={img3} alt="" />
+                                <h3 className="title unselectable">acessoria de obras</h3>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div name="test1" className="projetos flex-column">
@@ -74,13 +73,13 @@ const PortifolioComponent = (props) => {
                 </div>
 
                 <div name="residencial" className="subsection">
-                    <PortifolioSection section_title={"residencial"} section_list={projetos.residencial} section_description={description_residencial} />
+                    <PortifolioSection section_title={"residencial"} section_list={projetos.residencial} section_description={vazio} />
                 </div>
                 <div name="comercial" className="subsection">
-                    <PortifolioSection section_title={"comercial"} section_list={projetos.comercial} section_description={description_residencial} />
+                    <PortifolioSection section_title={"comercial"} section_list={projetos.comercial} section_description={vazio} />
                 </div>
                 <div name="interiores" className="subsection">
-                    <PortifolioSection section_title={"interiores"} section_list={projetos.interiores} section_description={description_residencial} />
+                    <PortifolioSection section_title={"interiores"} section_list={projetos.interiores} section_description={vazio} />
                 </div>
             </div>
             <div className="grey_block">
