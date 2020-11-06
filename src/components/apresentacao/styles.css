@@ -21,8 +21,8 @@
 .apresentacao .block_1 .info {
     position: absolute;
     padding: 30px;
-    padding-left: 5vw;
-    width: 50vw;
+    padding-left: 7vw;
+    width: 40vw;
     height: 100%;
 }
 
@@ -30,7 +30,7 @@
     font-size: 22px;
     padding-left: 20px;
     font-family: "Poppins", sans-serif;
-    text-align: left;
+    text-align: justify;
 }
 
 .apresentacao .block_1 {
@@ -128,3 +128,106 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media screen and (max-width: 768px) {
+    .apresentacao {
+        margin-top: 60px;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .apresentacao .scrollable {
+        max-height: 70vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .apresentacao h1 {
+        font-size: 64px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .apresentacao .block_1 .info {
+        position: absolute;
+        padding: 30px;
+        padding-left: 7vw;
+        width: 100%;
+        height: auto;
+    }
+
+    .apresentacao .block_1 .info p {
+        font-size: 18px;
+        padding-left: 20px;
+        font-family: "Poppins", sans-serif;
+        text-align: justify;
+    }
+
+    .apresentacao .block_1 {
+        min-height: 60vh;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .apresentacao .block_1 h1 {
+        color: var(--dark-yellow);
+    }
+
+    .apresentacao .block_2 {
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .apresentacao .block_2 .info .curriculo {
+        margin-left: 10%;
+        width: 90%;
+        align-items: flex-start;
+    }
+
+    .apresentacao .block_2 .info .curriculo .curso {
+        align-items: flex-start;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .apresentacao .block_2 .info .section_title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: var(--dark-aqua);
+    }
+
+    .apresentacao .block_2 .info .curriculo .curso .titulo {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+    }
+    .apresentacao .block_2 .info .curriculo .curso .local {
+        font-family: "Poppins", sans-serif;
+        font-style: italic;
+        margin-bottom: 3px;
+    }
+    .apresentacao .block_2 .info .curriculo .curso .titulo {
+        font-family: "Poppins", sans-serif;
+    }
+    .apresentacao .block_2 .info .curriculo .curso .enfase {
+        font-family: "Poppins", sans-serif;
+    }
+
+    .apresentacao .block_2 .info {
+        position: absolute;
+        padding: 30px;
+        right: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .apresentacao .block_2 h1 {
+        color: var(--dark-aqua);
+    }
+}
+
+/**MOBILE**/
