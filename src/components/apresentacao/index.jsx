@@ -6,7 +6,7 @@ import useWindowDimensions from "../../hooks/getWindowDimensions";
 import curriculo from "../../data/curriculo.js";
 
 const ApresentacaoComponent = (props) => {
-    const { height, width } = useWindowDimensions();
+    const { width } = useWindowDimensions();
 
     const pc_component = (
         <div className="apresentacao flex-column">

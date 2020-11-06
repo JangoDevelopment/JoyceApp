@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "./images/1.png";
 import img2 from "./images/2.png";
 import img3 from "./images/3.png";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import PortifolioSection from "../portifolio_section";
 import "./styles.css";
 
@@ -11,10 +11,6 @@ import projetos from "../../data/projetos";
 const PortifolioComponent = (props) => {
     const description_residencial =
         "Você tem um sonho e não sabe por onde começar? \n Comece por um projeto que tenha a sua identidade. \n Da residência aos projetos comerciais, aqui pensamos em um projeto funcional e esteticamente agradável sobre medida para você. ";
-    const description_reformas =
-        "Precisando dar uma cara nova pro seu espaço?\n Se seu ambiente/imóvel está precisando ser adaptado ou ganhar novo significado pode contar com nossa criatividade. \nDerrubando paredes ou respeitando a história do lugar, acharemos a melhor solução de acordo com as suas necessidades.";
-    const description_obras =
-        "O sucesso de uma obra envolve dedicação e um bom planejamento. \nTrabalhamos com visitas técnicas, cronograma de obras e planilha orçamentária. ";
     const vazio = "";
 
     return (

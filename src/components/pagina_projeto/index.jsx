@@ -5,7 +5,7 @@ import projetos from "../../data/projetos";
 import useWindowDimensions from "../../hooks/getWindowDimensions";
 
 const PaginaComponente = (props) => {
-    const { height, width } = useWindowDimensions();
+    const { width } = useWindowDimensions();
     const urlParams = window.location.hash;
     const splicedParams = urlParams.split("/", 4);
 

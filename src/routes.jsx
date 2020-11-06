@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter, HashRouter, Switch } from "react-router-dom";
+import { Route, HashRouter, Switch } from "react-router-dom";
 
 /****IMPORT PAGES******/
 
