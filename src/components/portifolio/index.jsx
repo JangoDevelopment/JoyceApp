@@ -16,7 +16,7 @@ const PortifolioComponent = (props) => {
     return (
         <div className="portifolio">
             <div className="parte1 flex-column">
-                <h1 className="section_title parte1_title">Veja nossas diferentes sessões de projetos </h1>
+                <h1 className="section_title center_text">Veja nossas diferentes sessões de projetos </h1>
                 <div className="flex first_panel">
                     <div className="section flex-column">
                         <Link activeClass="active" to="test1" spy={true} smooth={true} duration={500} offset={-50}>

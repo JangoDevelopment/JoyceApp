@@ -5,6 +5,12 @@
     width: 100%;
 }
 
+.portifolio .center_text {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
 .portifolio .grey_block {
     background-color: #f4f4f4;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -250,9 +256,7 @@
 
     .portifolio .section {
         box-sizing: border-box;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 100%;
     }
 
     .portifolio .parte1 .parte1_title {
@@ -261,6 +265,7 @@
 
     .portifolio .section_title {
         font-size: 36px;
+        text-align: center;
     }
 
     .portifolio .subsection_title {
@@ -268,9 +273,9 @@
     }
 
     .portifolio .parte1 .box img {
-        width: 42%;
+        width: 38%;
         height: auto;
-        margin-bottom: 20%;
+        margin-bottom: 10%;
     }
 
     .portifolio .parte1 .box .title {
