@@ -244,11 +244,40 @@
         width: 100%;
     }
 
+    .portifolio .first_panel {
+        flex-direction: column;
+    }
+
     .portifolio .section {
         box-sizing: border-box;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
+    }
+
+    .portifolio .parte1 .parte1_title {
+        font-size: 36px;
+    }
+
+    .portifolio .section_title {
+        font-size: 36px;
+    }
+
+    .portifolio .subsection_title {
+        font-size: 36px;
+    }
+
+    .portifolio .parte1 .box img {
+        width: 42%;
+        height: auto;
+        margin-bottom: 20%;
+    }
+
+    .portifolio .parte1 .box .title {
+        text-align: right;
+        width: 60%;
+        font-size: 22px;
+        bottom: 20px;
     }
 
     .portifolio .description {
@@ -258,5 +287,26 @@
     .portifolio .parte1 .box {
         height: 200px;
         width: 100%;
+    }
+
+    .portifolio .projetos .section_options {
+        flex-direction: column;
+    }
+
+    .portifolio .projetos .section_options .section_box {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .portifolio .project_galery .project {
+        width: 100%;
+        height: 180px;
+    }
+
+    .portifolio .project_galery .project img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

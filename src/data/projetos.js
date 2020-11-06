@@ -13,7 +13,7 @@ export default {
     comercial: [
         {
             id: 1,
-            titulo: "Centro Educacional Ser Stella – Olhos que envolvem",
+            titulo: "Centro Educacional Ser Stella",
             local: "Lorena",
             ano: 2019,
             descricao:
