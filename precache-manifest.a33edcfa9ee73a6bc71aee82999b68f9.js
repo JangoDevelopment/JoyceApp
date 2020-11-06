@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "66e8e760f2868aa99569229d415e03f3",
+    "revision": "e890a68c2a231165d5c0ddc3a163fec2",
     "url": "/joyceapp/index.html"
   },
   {
-    "revision": "33a6e2128fd3d0122aca",
-    "url": "/joyceapp/static/css/main.39ae355a.chunk.css"
+    "revision": "f4615bb754e45f8cdcfb",
+    "url": "/joyceapp/static/css/main.58b13730.chunk.css"
   },
   {
     "revision": "27a8d1b3f75d69d9001c",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/joyceapp/static/js/2.2b59c6a4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "33a6e2128fd3d0122aca",
-    "url": "/joyceapp/static/js/main.65a3a436.chunk.js"
+    "revision": "f4615bb754e45f8cdcfb",
+    "url": "/joyceapp/static/js/main.fbfb7b10.chunk.js"
   },
   {
     "revision": "9b5bc695f109a66fc9f7",
