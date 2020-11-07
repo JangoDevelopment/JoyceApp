@@ -60,6 +60,17 @@
     color: #ffbb00;
 }
 
+@media screen and (min-width:769px) and (max-width:1370px){
+
+    .footer{
+        min-height: 20vh;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .footer {
         width: 100%;

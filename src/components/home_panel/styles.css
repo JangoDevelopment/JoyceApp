@@ -92,6 +92,17 @@
     color: cornflowerblue;
 } */
 
+@media screen and (min-width:769px) and (max-width:1370px){
+    .home_panel .background .overlay h1{
+        font-size: 70px;
+    }
+    .home_panel .background .overlay h2{
+        text-align: right;
+        max-width: 70%;
+        font-size: 70px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .home_panel .background .overlay {
         width: 90%;
