@@ -68,6 +68,29 @@
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (min-width:769px) and (max-width:1370px){
+
+    .contato_form{
+        min-height: 92vh;
+    }
+
+    .contato_form .form{
+        padding: 10px;
+    }
+    .contato_form .form h1{
+        font-size: 30px;
+    }
+
+    .contato_form .form h2{
+        font-size: 15px;
+    }
+
+    .contato_form .form .map {
+        width: 400px;
+        height: 140px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .contato_form {
         margin-left: auto;

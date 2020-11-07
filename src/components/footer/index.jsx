@@ -16,7 +16,7 @@ const Footer = (props) => {
                     <p>Vamos tomar um café?</p>
                     <FaCoffee className="coffee_icon" />
                 </div>
-                <p>joy.cacador@gmail.com</p>
+                <p>arq.joycecacador@gmail.com</p>
                 <p>
                     <span>(12)</span> 9 8147 - 0468
                 </p>
