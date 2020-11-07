@@ -11,6 +11,10 @@ import projetos from "../../data/projetos";
 const PortifolioComponent = (props) => {
     const description_residencial =
         "Você tem um sonho e não sabe por onde começar? \n Comece por um projeto que tenha a sua identidade. \n Da residência aos projetos comerciais, aqui pensamos em um projeto funcional e esteticamente agradável sobre medida para você. ";
+        const description_reformas =
+        "Precisando dar uma cara nova para o seu espaço? Se seu ambiente/imóvel está precisando ser adaptado ou ganhar novo significado pode contar com nossa criatividade. Derrubando paredes ou respeitando a história do lugar, acharemos a melhor solução de acordo com as suas necessidades.";
+        const description_obras =
+        "O sucesso de uma obra envolve dedicação e um bom planejamento. Trabalhamos com visitas técnicas, cronograma de obras e planilha orçamentária. ";
     const vazio = "";
 
     return (
@@ -94,11 +98,11 @@ const PortifolioComponent = (props) => {
             </div>
             <div className="grey_block">
                 <div name="reforma" className="subsection">
-                    <PortifolioSection section_title={"Reformas"} section_list={projetos.reformas} section_description={description_residencial} />
+                    <PortifolioSection section_title={"Reformas"} section_list={projetos.reformas} section_description={description_reformas} />
                 </div>
             </div>
             <div name="obras" className="subsection">
-                <PortifolioSection section_title={"Acessoria de Obras"} section_list={projetos.obras} section_description={description_residencial} />
+                <PortifolioSection section_title={"Acessoria de Obras"} section_list={projetos.obras} section_description={description_obras} />
             </div>
         </div>
     );

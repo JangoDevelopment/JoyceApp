@@ -94,12 +94,16 @@
 
 @media screen and (min-width:769px) and (max-width:1370px){
     .home_panel .background .overlay h1{
-        font-size: 70px;
+        font-size: 64px;
     }
     .home_panel .background .overlay h2{
         text-align: right;
-        max-width: 70%;
-        font-size: 70px;
+        max-width: 80%;
+        font-size: 64px;
+    }
+
+    .home_panel .background .overlay {
+        padding: 15px 40px;
     }
 }
 
