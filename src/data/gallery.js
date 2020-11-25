@@ -38,6 +38,9 @@ import ser_stella_4 from "../assets/gallery/ser_stella/4.jpg";
 import ser_stella_5 from "../assets/gallery/ser_stella/5.jpg";
 import ser_stella_6 from "../assets/gallery/ser_stella/6.jpg";
 
+import casa_at_1 from "../assets/gallery/casa_at/1.jpg";
+
+
 
 
 export default{
@@ -220,6 +223,13 @@ export default{
         },
         {
             src: ser_stella_6,
+            width: 16,
+            height: 10,
+        }
+    ],
+    casa_at:[
+        {
+            src: casa_at_1,
             width: 16,
             height: 10,
         }

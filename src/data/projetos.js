@@ -11,7 +11,7 @@ export default {
             descricao:
                 "Esse projeto contempla  uma casa pequena  para um jovem casal. A conexão entre varanda, sala, cozinha e área de serviço proporciona amplitude ao ambiente e maior praticidade. O banheiro foi posicionado de forma que pudesse ser tanto privativo ao quarto quanto para uso das áreas sociais.",
             capa: "images/capas/residencial_1.jpg",
-            galeria:[]
+            galeria: gallery.casa_at
         },
     ],
     comercial: [
@@ -43,7 +43,7 @@ export default {
             descricao:
                 "Galpão Comercial Multifuncional. Parceria realizada com a MS Estruturas Metálicas. A estrutura do galpão é realizada em pilares de concreto pré-fabricado, estrutura da cobertura em treliças metálicas e vedação em bloco de concreto. O uso desse materiais otimiza e acelera a execução da obra. ",
             capa: "images/capas/comercial_1.jpg",
-            galeria:[]
+            galeria: gallery.ser_stella
         },
     ],
     interiores: [
