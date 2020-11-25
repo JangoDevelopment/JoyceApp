@@ -10,9 +10,8 @@
     bottom: 40px;
     left: 40px;
     z-index: 4;
-    width: 330px;
-    height: 350px;
-    background-image: url("./images/b1.png");
+    width: 230px;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -22,9 +21,8 @@
     bottom: 40px;
     left: 40px;
     z-index: 4;
-    width: 265px;
-    height: 350px;
-    background-image: url("./images/b2.png");
+    width: auto;
+    height: 230px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -34,9 +32,8 @@
     bottom: 40px;
     left: 40px;
     z-index: 4;
-    width: 420px;
-    height: 220px;
-    background-image: url("./images/b3.png");
+    width: auto;
+    height: 150px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -48,7 +45,6 @@
     z-index: 4;
     width: 220px;
     height: 350px;
-    background-image: url("./images/b4.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -64,6 +60,10 @@
     align-items: flex-end;
     justify-content: center;
     padding: 20px 50px;
+}
+
+.home_panel .background .overlay .titulo{
+    width: 70%;
 }
 
 .home_panel .background .image {

@@ -25,13 +25,15 @@
 }
 
 .footer .coffee {
+    width: 100%;
     align-self: center;
-    justify-content: center;
+    justify-content: flex-start;
     cursor: pointer;
 }
 
 .footer .coffee_icon {
     margin-left: 8px;
+    margin-top: 1px;
     cursor: pointer;
     transition: all 0.3s;
     color: #ffffff;

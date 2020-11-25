@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo_img from "../../assets/logo.png";
 import "./styles.css";
 
 const Header = (props) => {
     return (
         <header className="header flex">
             <div className="logo flex">
-                <img src="" alt="" />
+                <img src={logo_img} alt="" />
                 <Link className="titulo" to={"/"}>
                     <h1 className="titulo unselectable">Joyce Caçador</h1>
                     <h2 className="subtitulo unselectable">Arquitetura e Urbanismo</h2>
