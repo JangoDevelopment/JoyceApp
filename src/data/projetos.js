@@ -23,7 +23,7 @@ export default {
         {
             id: 2,
             titulo: "Casa das Câmeras",
-            local: "Lorena",
+            local: "Guaratingueta",
             ano: 2019,
             descricao:
                 "Essa loja precisava de um novo lugar para expor seu produtos. O espaço era pequeno, logo o desafio foi otimizar o máximo possível. De um lado trabalhamos com uma nova área de exposição para os produtos menores, um balcão de atendimento que dá continuidade a mesa de escritório. De outro, prateleiras para produtos maiores , painel de televisores e câmeras. ",
