@@ -23,8 +23,8 @@ const Footer = (props) => {
             </div>
             <div className="block info flex-column">
                 <div className="flex icons">
-                    <AiOutlineInstagram className="icon link" />
-                    <FaFacebookSquare className="icon link" />
+                    <a href="https://www.instagram.com/arq.joycecacador/" target="_blank" rel="noopener noreferrer"><AiOutlineInstagram className="icon link" /></a>
+                    <a href="https://www.facebook.com/joyce.cacador" target="_blank" rel="noopener noreferrer"><FaFacebookSquare className="icon link" /></a>
                 </div>
                 <p>
                     © 2020 - <span className="link">Joyce Caçador</span>
