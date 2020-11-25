@@ -5,6 +5,8 @@ import Gallery from "react-photo-gallery";
 import projetos from "../../data/projetos";
 import useWindowDimensions from "../../hooks/getWindowDimensions";
 
+import project_gallery from "../../data/gallery"
+
 const PaginaComponente = (props) => {
     const { width } = useWindowDimensions();
     const urlParams = window.location.hash;
@@ -12,55 +14,12 @@ const PaginaComponente = (props) => {
 
     const categoria = projetos[`${splicedParams[2]}`];
 
-    const photos = [
-        {
-            src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-            width: 1,
-            height: 1,
-        },
-        {
-            src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-            width: 3,
-            height: 4,
-        },
-        {
-            src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-            width: 1,
-            height: 1,
-        },
-        {
-            src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-            width: 1,
-            height: 1,
-        },
-        {
-            src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-            width: 1,
-            height: 1,
-        },
-        {
-            src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-            width: 1,
-            height: 1,
-        },
-        {
-            src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-            width: 1,
-            height: 1,
-        },
-        {
-            src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-            width: 1,
-            height: 1,
-        },
-        {
-            src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-            width: 1,
-            height: 1,
-        },
-    ];
+    const photos = project_gallery.ser_stella;
 
     const projeto = categoria.find((x) => x.id === parseInt(splicedParams[3]));
+
+
+
     console.log("here", projeto);
 
     const pc_component = (

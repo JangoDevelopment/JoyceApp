@@ -1,3 +1,11 @@
+import casa_sjc_1 from "../assets/gallery/casa_sjc/1.jpg";
+import casa_sjc_2 from "../assets/gallery/casa_sjc/2.png";
+import casa_sjc_3 from "../assets/gallery/casa_sjc/3.png";
+import casa_sjc_4 from "../assets/gallery/casa_sjc/4.png";
+import casa_sjc_5 from "../assets/gallery/casa_sjc/5.png";
+import casa_sjc_6 from "../assets/gallery/casa_sjc/6.png";
+import casa_sjc_7 from "../assets/gallery/casa_sjc/7.png";
+
 export default {
     residencial: [
         {
@@ -67,7 +75,7 @@ export default {
             ano: 2020,
             descricao:
                 "Depois de quase 20 anos com uma casa agitada e uma cozinha pequenina, os clientes resolveram ampliar esse ambiente que era centro de todas as reuniões. Agora a nova cozinha possuí bancadas e armários funcionais, perfeito para as reuniões familiares.",
-            capa: "images/capas/comercial_1.jpg",
+            capa: "images/capas/reformas_2.jpg",
         },
     ],
     obras: [
@@ -78,7 +86,7 @@ export default {
             ano: 2019,
             descricao:
                 "A casa MC foi construída há mais de 60 anos. Os cômodos eram mal divididos, as paredes precisavam de reboco novo, o piso era de chão batido, entre outras coisas. O Desafio foi transformar essa casa em uma casa atual com ambientes integrados, suíte e quartos confortáveis. Veja fotos do antes e depois.",
-            capa: "images/capas/comercial_1.jpg",
+            capa: "images/capas/reformas_1.jpg",
         },
         {
             id: 2,
@@ -87,7 +95,7 @@ export default {
             ano: 2020,
             descricao:
                 "Depois de quase 20 anos com uma casa agitada e uma cozinha pequenina, os clientes resolveram ampliar esse ambiente que era centro de todas as reuniões. Agora a nova cozinha possuí bancadas e armários funcionais, perfeito para as reuniões familiares.",
-            capa: "images/capas/comercial_1.jpg",
+            capa: "images/capas/reformas_2.jpg",
         },
     ],
 };
