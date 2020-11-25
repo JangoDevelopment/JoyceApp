@@ -20,9 +20,9 @@ const PortifolioSection = ({ section_title, section_description, section_list })
     const comercial_3 = require("../../images/capas/comercial_2.jpg");
     const interiores_1 = require("../../images/capas/interiores_1.png");
     const reformas_1 = require("../../images/capas/reformas_1.jpg");
-    const reformas_2 = require("../../images/capas/reformas_1.jpg");
+    const reformas_2 = require("../../images/capas/reformas_2.jpg");
     const obras_1 = require("../../images/capas/reformas_1.jpg");
-    const obras_2 = require("../../images/capas/reformas_1.jpg");
+    const obras_2 = require("../../images/capas/reformas_2.jpg");
     const residencial_1 = require("../../images/capas/residencial_1.jpg");
 
     let lowercase_section = section_title.toLowerCase();

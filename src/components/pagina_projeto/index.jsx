@@ -5,19 +5,16 @@ import Gallery from "react-photo-gallery";
 import projetos from "../../data/projetos";
 import useWindowDimensions from "../../hooks/getWindowDimensions";
 
-import project_gallery from "../../data/gallery"
-
 const PaginaComponente = (props) => {
     const { width } = useWindowDimensions();
     const urlParams = window.location.hash;
     const splicedParams = urlParams.split("/", 4);
 
     const categoria = projetos[`${splicedParams[2]}`];
-
-    const photos = project_gallery.ser_stella;
-
+    
     const projeto = categoria.find((x) => x.id === parseInt(splicedParams[3]));
-
+    
+    const photos = projeto.galeria
 
 
     console.log("here", projeto);

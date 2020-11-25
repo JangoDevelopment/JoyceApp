@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./styles.css";
 // import Form from "../../components/form_contatos";
 import Footer from "../../components/footer";
@@ -26,6 +26,11 @@ function Item(props) {
 }
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    })
+
     return (
         <div className="flex-column">
             <PersistentDrawerRight />

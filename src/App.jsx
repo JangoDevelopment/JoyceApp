@@ -3,7 +3,8 @@ import "./App.css";
 import "./default.css";
 import Routes from "./routes";
 
-function App() {
+function App(props) {
+
     return (
         <div className="App">
             <Routes />

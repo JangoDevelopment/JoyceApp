@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 
@@ -8,6 +8,11 @@ import "./styles.css";
 import FormContatos from "../../components/form_contatos";
 
 const Contact = () => {
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    })
+
     return (
         <div>
             <Header />

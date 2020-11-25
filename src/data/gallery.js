@@ -190,36 +190,38 @@ export default{
             src: cozinha_rustica_4,
             width: 16,
             height: 10,
-        }],
-        ser_stella: [
-            {
-                src: ser_stella_1,
-                width: 16,
-                height: 10,
-            },
-            {
-                src: ser_stella_2,
-                width: 16,
-                height: 11,
-            },
-            {
-                src: ser_stella_3,
-                width: 16,
-                height: 10,
-            },
-            {
-                src: ser_stella_4,
-                width: 16,
-                height: 10,
-            },
-            {
-                src: ser_stella_5,
-                width: 16,
-                height: 10,
-            },
-            {
-                src: ser_stella_6,
-                width: 16,
-                height: 10,
-            }]
+    }
+    ],
+    ser_stella: [
+        {
+            src: ser_stella_1,
+            width: 16,
+            height: 10,
+        },
+        {
+            src: ser_stella_2,
+            width: 16,
+            height: 11,
+        },
+        {
+            src: ser_stella_3,
+            width: 16,
+            height: 10,
+        },
+        {
+            src: ser_stella_4,
+            width: 16,
+            height: 10,
+        },
+        {
+            src: ser_stella_5,
+            width: 16,
+            height: 10,
+        },
+        {
+            src: ser_stella_6,
+            width: 16,
+            height: 10,
+        }
+    ]
 }
