@@ -1,0 +1,13 @@
+.carousel-container {
+    width: 100%;
+    height: 84vh;
+    position: relative;
+}
+
+.carousel-container .logo {
+    position: absolute;
+    z-index: 3;
+    right: -15%;
+    top: 0;
+    height: 100%;
+}
