@@ -85,6 +85,9 @@
     color: var(--dark-aqua);
 }
 
+.apresentacao .block_2 .info .curriculo .curso .texto-apresentacao {
+    font-family: "Poppins", sans-serif;
+}
 .apresentacao .block_2 .info .curriculo .curso .titulo {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -137,7 +140,7 @@
         width:100
     }
     .apresentacao h1{
-        font-size: 65px;
+        font-size: 60px;
     }
 
     .apresentacao .block_1 .info p{
