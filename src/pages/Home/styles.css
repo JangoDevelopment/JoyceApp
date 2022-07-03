@@ -4,10 +4,36 @@
     position: relative;
 }
 
-.carousel-container .logo {
+.carousel-container .logo-div {
     position: absolute;
     z-index: 3;
-    right: -15%;
+    right: 0;
     top: 0;
     height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.carousel-container .logo-div .logo {
+    width: 90%;
+}
+
+@media screen and (min-width:1800px){
+    .carousel-container .logo-div {
+        right: 200px;
+    }
+    .carousel-container .logo-div .logo {
+        width: 100%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1370px){
+    .carousel-container .logo-div .logo {
+        width: 70%;
+    }
+}
+@media screen and (min-width:321px) and (max-width:768px){
+    .carousel-container .logo-div .logo {
+        width: 70%;
+    }
 }
