@@ -30,16 +30,16 @@ const HomePanel = ({ painel }) => {
         <div className="home_panel">
             <div className="background">
                 {painel === 0 ? (
-                    <Image0 className="image" />
+                    <Image0 className="image yellow-image" />
                 ) : null}
                 {painel === 1 ? (
-                    <Image1 className="image" />
+                    <Image1 className="image red-image" />
                 ) : null}
                 {painel === 2 ? (
-                    <Image2 className="image" />
+                    <Image2 className="image blue-image" />
                 ) : null}
                 {painel === 3 ? (
-                    <Image3 className="image" />
+                    <Image3 className="image green-image" />
                 ) : null}
                 <div className="logo-carousel-container">
                     <img className="logo-carousel-img" src={logo_img} alt="" />
