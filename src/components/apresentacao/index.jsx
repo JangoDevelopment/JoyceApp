@@ -4,6 +4,7 @@ import "./styles.css";
 import useWindowDimensions from "../../hooks/getWindowDimensions";
 
 import curriculo from "../../data/curriculo.js";
+import servicos from "../../data/servicos.js";
 
 const ApresentacaoComponent = (props) => {
     const { width } = useWindowDimensions();
@@ -12,11 +13,19 @@ const ApresentacaoComponent = (props) => {
         <div className="apresentacao flex-column">
             <div className="block_1">
                 <div className="info">
-                    <h1>valores</h1>
-                    <p>
-                        Apaixonada pelo meu trabalho, acredito que a Arquitetura e o Urbanismo tem o poder de transformar vidas. <br /> <br /> Minha missão é
-                        apresentar o melhor resultado dentro dos parâmetros desejados e buscar sempre as melhores soluções para o cliente.
-                    </p>
+                    <h1>Serviços</h1>
+                    <div className="scrollable">
+                        {servicos.map((servico) => {
+                            return (
+                                <div className="servico">
+                                    <h3 className="titulo">{servico.titulo}</h3>
+                                    <h4 className="descricao">{servico.descricao}</h4>
+                                    <h4 className="subdescricao">{servico.residential}</h4>
+                                    <h4 className="subdescricao">{servico.comercial}</h4>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
                 <div className="background_image"></div>
             </div>
@@ -27,7 +36,7 @@ const ApresentacaoComponent = (props) => {
                         <section className="curriculo flex-column">
                             <h2 className="section_title">Apresentação</h2>
                             <div className="curso flex-column">
-                                <h4 className = "texto-apresentacao">
+                                <h4 className="texto-apresentacao">
                                     Apaixonada pelo meu trabalho, acredito que a Arquitetura e o Urbanismo tem o poder de transformar vidas. <br /> <br /> Minha missão é
                                     apresentar o melhor resultado dentro dos parâmetros desejados e buscar sempre as melhores soluções para o cliente.
                                 </h4>

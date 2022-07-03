@@ -26,11 +26,25 @@
     height: 100%;
 }
 
-.apresentacao .block_1 .info p {
-    font-size: 22px;
-    padding-left: 20px;
+.apresentacao .block_1 .info .servico {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-family: "Poppins", sans-serif;
-    text-align: justify;
+    padding: 4px 0;
+}
+
+.apresentacao .block_1 .info .servico .titulo {
+    font-weight: bold;
+}
+
+.apresentacao .block_1 .info .servico .descricao {
+    text-align: left;
+}
+
+.apresentacao .block_1 .info .servico .subdescricao {
+    text-align: left;
+    padding-top: 4px;
 }
 
 .apresentacao .block_1 {
