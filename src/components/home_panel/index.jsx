@@ -41,7 +41,9 @@ const HomePanel = ({ painel }) => {
                 {painel === 3 ? (
                     <Image3 className="image" />
                 ) : null}
-                {/* <img className="logo-carousel-img" src={logo_img} alt="" /> */}
+                <div className="logo-carousel-container">
+                    <img className="logo-carousel-img" src={logo_img} alt="" />
+                </div>
             </div>
         </div>
     );
