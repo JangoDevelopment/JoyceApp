@@ -60,6 +60,18 @@
     font-size: 20px;
 }
 
+.contato_form .form a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+}
+
+.contato_form .form a .whatsapp {
+    color: #128C7E;
+    font-size: 22px;
+}
+
 .contato_form .form .map {
     margin-top: 32px;
     border-radius: 4px;
@@ -81,7 +93,8 @@
         font-size: 30px;
     }
 
-    .contato_form .form h2{
+    .contato_form .form h2,
+    .contato_form .form a .whatsapp{
         font-size: 15px;
     }
 
@@ -113,7 +126,8 @@
         font-size: 32px;
     }
 
-    .contato_form .form h2 {
+    .contato_form .form h2,
+    .contato_form .form a .whatsapp {
         font-size: 20px;
     }
 

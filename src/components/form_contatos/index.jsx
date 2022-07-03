@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+
 import "./styles.css";
 
 const FormContatos = (props) => {
@@ -6,7 +9,7 @@ const FormContatos = (props) => {
         <div className="contato_form">
             <form className="form flex-column">
                 <h1>vamos tomar um café?</h1>
-                <h2>(12) 98147 0468</h2>
+                <a class = 'link' href="https://api.whatsapp.com/send?phone=5512981470468&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener noreferrer"><IoLogoWhatsapp className="whatsapp link" /> <h2>(12) 98147 0468</h2></a>
                 <h2>arq.joycecacador@gmail.com</h2>
                 <br />
                 <h1>me encontre aqui</h1>
