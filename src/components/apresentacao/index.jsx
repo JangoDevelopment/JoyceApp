@@ -24,7 +24,7 @@ const ApresentacaoComponent = (props) => {
     }
 
     function toggleIconClass(index) {
-        return toggleServices.services[index].toggled ? "arrow-down" : "arrow-right";
+        return toggleServices.services[index].toggled ? "arrow toggle-down" : "arrow toggle-right";
     }
 
     const pc_component = (
