@@ -1,3 +1,11 @@
+.showListElement {
+    display: block;
+}
+
+.hideListElement {
+    display: none;
+}
+
 .apresentacao {
     margin-top: 60px;
     min-height: 100vh;
@@ -6,7 +14,7 @@
 
 .apresentacao .scrollable {
     max-height: 70vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
@@ -41,6 +49,7 @@
     font-size: 24px;
     margin-bottom: 10px;
     color: var(--dark-yellow);
+    cursor: pointer;
 }
 
 .apresentacao .block_1 .info .servico .descricao {
@@ -202,6 +211,10 @@
 
     .mobile .block_1 h1 {
         color: var(--dark-yellow);
+    }
+
+    .mobile .block_1 .info {
+        min-height: 60vh;
     }
 
     .mobile .block_1 .info .servico {

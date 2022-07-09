@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
 import useWindowDimensions from "../../hooks/getWindowDimensions";
@@ -8,6 +8,20 @@ import servicos from "../../data/servicos.js";
 
 const ApresentacaoComponent = (props) => {
     const { width } = useWindowDimensions();
+    const [toggleServices, setToggleServices] = useState({
+        services: servicos
+    });
+
+    function toggleActive(index) {
+        let arrayCopy = [...toggleServices.services];
+
+        arrayCopy[index].toggled = !arrayCopy[index].toggled;
+        setToggleServices({ ...toggleServices, services: arrayCopy });
+    }
+
+    function toggleClass(index) {
+        return toggleServices.services[index].toggled ? "showListElement" : "hideListElement";
+    }
 
     const pc_component = (
         <div className="apresentacao flex-column">
@@ -15,13 +29,13 @@ const ApresentacaoComponent = (props) => {
                 <div className="info">
                     <h1>Serviços</h1>
                     <div className="scrollable">
-                        {servicos.map((servico, i) => {
+                        {toggleServices.services.map((servico, i) => {
                             return (
                                 <div className="servico">
-                                    <h3 className="titulo">{servico.titulo}</h3>
-                                    <h4 className="descricao">{servico.descricao}</h4>
-                                    <h4 className="subdescricao">{servico.residential}</h4>
-                                    <h4 className="subdescricao">{servico.comercial}</h4>
+                                    <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo}</h3>
+                                    <h4 className={"descricao " + toggleClass(i)}>{servico.descricao}</h4>
+                                    <h4 className={"subdescricao " + toggleClass(i)}>{servico.residential}</h4>
+                                    <h4 className={"subdescricao " + toggleClass(i)}>{servico.comercial}</h4>
                                 </div>
                             );
                         })}
@@ -95,13 +109,13 @@ const ApresentacaoComponent = (props) => {
                 <div className="info">
                     <h1>Serviços</h1>
                     <div className="scrollable">
-                        {servicos.map((servico, i) => {
+                        {toggleServices.services.map((servico, i) => {
                             return (
                                 <div className="servico">
-                                    <h3 className="titulo">{servico.titulo}</h3>
-                                    <h4 className="descricao">{servico.descricao}</h4>
-                                    <h4 className="subdescricao">{servico.residential}</h4>
-                                    <h4 className="subdescricao">{servico.comercial}</h4>
+                                    <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo}</h3>
+                                    <h4 className={"descricao " + toggleClass(i)}>{servico.descricao}</h4>
+                                    <h4 className={"subdescricao " + toggleClass(i)}>{servico.residential}</h4>
+                                    <h4 className={"subdescricao " + toggleClass(i)}>{servico.comercial}</h4>
                                 </div>
                             );
                         })}
