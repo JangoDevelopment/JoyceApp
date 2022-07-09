@@ -15,7 +15,7 @@ const ApresentacaoComponent = (props) => {
                 <div className="info">
                     <h1>Serviços</h1>
                     <div className="scrollable">
-                        {servicos.map((servico) => {
+                        {servicos.map((servico, i) => {
                             return (
                                 <div className="servico">
                                     <h3 className="titulo">{servico.titulo}</h3>

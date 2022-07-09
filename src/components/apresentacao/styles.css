@@ -31,11 +31,16 @@
     flex-direction: column;
     align-items: flex-start;
     font-family: "Poppins", sans-serif;
-    padding: 4px 0;
+    padding: 8px 0;
 }
 
 .apresentacao .block_1 .info .servico .titulo {
-    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--dark-yellow);
 }
 
 .apresentacao .block_1 .info .servico .descricao {
@@ -102,18 +107,22 @@
 .apresentacao .block_2 .info .curriculo .curso .texto-apresentacao {
     font-family: "Poppins", sans-serif;
 }
+
 .apresentacao .block_2 .info .curriculo .curso .titulo {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
+
 .apresentacao .block_2 .info .curriculo .curso .local {
     font-family: "Poppins", sans-serif;
     font-style: italic;
     margin-bottom: 3px;
 }
+
 .apresentacao .block_2 .info .curriculo .curso .titulo {
     font-family: "Poppins", sans-serif;
 }
+
 .apresentacao .block_2 .info .curriculo .curso .enfase {
     font-family: "Poppins", sans-serif;
 }
@@ -147,30 +156,31 @@
     background-size: cover;
 }
 
-@media screen and (min-width:769px) and (max-width:1370px){
-    .apresentacao{
-        margin-top:30px;
-        min-height:100vh;
-        width:100
+@media screen and (min-width:769px) and (max-width:1370px) {
+    .apresentacao {
+        margin-top: 30px;
+        min-height: 100vh;
+        width: 100
     }
-    .apresentacao h1{
+
+    .apresentacao h1 {
         font-size: 60px;
     }
 
-    .apresentacao .block_1 .info p{
+    .apresentacao .block_1 .info p {
         font-size: 16px;
     }
 
-    .apresentacao .block_2 .info{
+    .apresentacao .block_2 .info {
         width: 45vw;
     }
 
     .apresentacao .block_2 .info .curriculo {
-        margin-left:10%;
+        margin-left: 10%;
         width: 90%;
     }
 
-    .apresentacao .scrollable{
+    .apresentacao .scrollable {
         max-height: 55vh;
     }
 }
@@ -250,14 +260,17 @@
         font-family: "Poppins", sans-serif;
         font-weight: 600;
     }
+
     .apresentacao .block_2 .info .curriculo .curso .local {
         font-family: "Poppins", sans-serif;
         font-style: italic;
         margin-bottom: 3px;
     }
+
     .apresentacao .block_2 .info .curriculo .curso .titulo {
         font-family: "Poppins", sans-serif;
     }
+
     .apresentacao .block_2 .info .curriculo .curso .enfase {
         font-family: "Poppins", sans-serif;
     }
