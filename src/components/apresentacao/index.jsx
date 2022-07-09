@@ -93,16 +93,24 @@ const ApresentacaoComponent = (props) => {
         <div className="mobile flex-column">
             <div className="block_1">
                 <div className="info">
-                    <h1>valores</h1>
-                    <p>
-                        Apaixonada pelo meu trabalho, acredito que a Arquitetura e o Urbanismo tem o poder de transformar vidas. <br /> <br /> Minha missão é
-                        apresentar o melhor resultado dentro dos parâmetros desejados e buscar sempre as melhores soluções para o cliente.
-                    </p>
+                    <h1>Serviços</h1>
+                    <div className="scrollable">
+                        {servicos.map((servico, i) => {
+                            return (
+                                <div className="servico">
+                                    <h3 className="titulo">{servico.titulo}</h3>
+                                    <h4 className="descricao">{servico.descricao}</h4>
+                                    <h4 className="subdescricao">{servico.residential}</h4>
+                                    <h4 className="subdescricao">{servico.comercial}</h4>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
             <div className="block_2">
                 <div className="info">
-                    <h1>curriculo</h1>
+                    <h1>Formação</h1>
                     <div className="scrollable">
                         <section className="curriculo flex-column">
                             <h2 className="section_title">Formação</h2>
@@ -150,7 +158,7 @@ const ApresentacaoComponent = (props) => {
         </div>
     );
 
-    return <div className="apresentacao flex-column">{width > 768 ? pc_component : mobile_component}</div>;
+    return <div className="flex-column">{width > 768 ? pc_component : mobile_component}</div>;
 };
 
 export default ApresentacaoComponent;
