@@ -23,6 +23,10 @@ const ApresentacaoComponent = (props) => {
         return toggleServices.services[index].toggled ? "showListElement" : "hideListElement";
     }
 
+    function toggleIconClass(index) {
+        return toggleServices.services[index].toggled ? "arrow-down" : "arrow-right";
+    }
+
     const pc_component = (
         <div className="apresentacao flex-column">
             <div className="block_1">
@@ -32,7 +36,7 @@ const ApresentacaoComponent = (props) => {
                         {toggleServices.services.map((servico, i) => {
                             return (
                                 <div className="servico">
-                                    <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo}</h3>
+                                    <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo} <div class={toggleIconClass(i)}></div> </h3>
                                     <h4 className={"descricao " + toggleClass(i)}>{servico.descricao}</h4>
                                     <h4 className={"subdescricao " + toggleClass(i)}>{servico.residential}</h4>
                                     <h4 className={"subdescricao " + toggleClass(i)}>{servico.comercial}</h4>
@@ -108,11 +112,11 @@ const ApresentacaoComponent = (props) => {
             <div className="block_1">
                 <div className="info">
                     <h1>Serviços</h1>
-                    <div className="scrollable">
+                    <div className="servicos scrollable">
                         {toggleServices.services.map((servico, i) => {
                             return (
                                 <div className="servico">
-                                    <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo}</h3>
+                                    <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo} <div class={toggleIconClass(i)}></div></h3>
                                     <h4 className={"descricao " + toggleClass(i)}>{servico.descricao}</h4>
                                     <h4 className={"subdescricao " + toggleClass(i)}>{servico.residential}</h4>
                                     <h4 className={"subdescricao " + toggleClass(i)}>{servico.comercial}</h4>
