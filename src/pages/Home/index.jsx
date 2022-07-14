@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "./styles.css";
 // import Form from "../../components/form_contatos";
-import Footer from "../../components/footer";
+// import Footer from "../../components/footer";
 import HomePanel from "../../components/home_panel";
-import Header from "../../components/header";
+// import Header from "../../components/header";
 
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@material-ui/core";
-import PersistentDrawerRight from "../../components/header/responsive";
+// import PersistentDrawerRight from "../../components/header/responsive";
 import logo_img from "../../assets/logo.png";
 
 function Example(props) {
@@ -39,10 +39,10 @@ const Home = () => {
 
     return (
         <div className="flex-column">
-            <PersistentDrawerRight />
-            <Header />
+            {/* <PersistentDrawerRight />
+            <Header /> */}
             {Example()}
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
