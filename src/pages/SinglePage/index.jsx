@@ -12,6 +12,8 @@ import Apresentacao from "../Apresentacao";
 function Example(props) {
     return (
         <div className="carousel-container">
+            <PersistentDrawerRight />
+            <Header />
             <Home />
             <Apresentacao />
             <Portifolio />
@@ -28,8 +30,8 @@ const SinglePage = () => {
 
     return (
         <div className="flex-column">
-            <PersistentDrawerRight />
-            <Header />
+            {/* <PersistentDrawerRight />
+            <Header /> */}
             {Example()}
             {/* <Footer /> */}
         </div>

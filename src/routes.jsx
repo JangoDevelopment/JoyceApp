@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, HashRouter, Switch } from "react-router-dom";
+import { Route, HashRouter, Switch, BrowserRouter } from "react-router-dom";
 
 /****IMPORT PAGES******/
 
@@ -12,16 +12,18 @@ import Projeto from "./pages/Project";
 const Routes = () => {
 
     return (
-        <HashRouter>
-            <Switch>
+        // <HashRouter>
+        //     <Switch>
+            <BrowserRouter>
                 <Route component={SinglePage} exact path="/" />
                 {/* <Route component={Home} exact path="/home" />
                 <Route component={Contact} exact path="/contato" />
                 <Route component={Projeto} path="/projeto" />
                 <Route component={Portifolio} exact path="/portifolio" />
                 <Route component={Apresentacao} exact path="/apresentacao" /> */}
-            </Switch>
-        </HashRouter>
+            </BrowserRouter>
+        //     </Switch>
+        // </HashRouter>
     );
 };
 

@@ -6,7 +6,7 @@ import "./styles.css";
 
 const FormContatos = (props) => {
     return (
-        <div className="contato_form">
+        <div className="contato_form" id="contato">
             <form className="form flex-column">
                 <h1>vamos tomar um café?</h1>
                 <a class = 'link' href="https://api.whatsapp.com/send?phone=5512981470468&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener noreferrer"><IoLogoWhatsapp className="whatsapp link" /> <h2>(12) 98147 0468</h2></a>

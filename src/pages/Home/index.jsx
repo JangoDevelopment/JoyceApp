@@ -14,7 +14,7 @@ function Example(props) {
     var items = [{ tela: <HomePanel painel={0} /> }, { tela: <HomePanel painel={1} /> }, { tela: <HomePanel painel={2} /> }];
 
     return (
-        <div className="carousel-container">
+        <div className="carousel-container" id="home">
             <Carousel indicators={false} timeout={500} interval={1800}>
                 {items.map((item, i) => (
                     <Item key={i} item={item} />

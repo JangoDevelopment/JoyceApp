@@ -14,7 +14,7 @@ const Portifolio = () => {
     })
 
     return (
-        <div className="flex-column">
+        <div className="flex-column" id="portifolio">
             {/* <Header />
             <PersistentDrawerRight /> */}
             <PortifolioComponent />
