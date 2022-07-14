@@ -20,9 +20,9 @@ function Example(props) {
                     <Item key={i} item={item} />
                 ))}
             </Carousel>
-            {/* <div className="logo-div">
+            <div className="logo-div">
                 <img className="logo" src={logo_img} alt="" />
-            </div> */}
+            </div>
         </div>
     );
 }
