@@ -126,7 +126,7 @@ const ApresentacaoComponent = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="block_2">
+            <div className="block_2" id="formacao">
                 <div className="info">
                     <h1>Formação</h1>
                     <div className="scrollable">

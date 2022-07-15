@@ -42,16 +42,17 @@ const Header = (props) => {
                         e.preventDefault();
                         hero && hero.scrollIntoView({ behavior: "smooth", block: "start" });
                     }}>
-                    <li className="unselectable">Apresentação</li>
+                    <li className="unselectable">Serviços</li>
                 </a>
                 <a className="link"
                     href="/"
                     onClick={e => {
                         let hero = document.getElementById("formacao");
                         e.preventDefault();
-                        hero && hero.scrollIntoView({ behavior: "smooth", block: "start" });
+                        const y =hero && hero.getBoundingClientRect().top + window.pageYOffset -40;
+                        window.scrollTo({top: y, behavior: 'smooth'});
                     }}>
-                    <li className="unselectable">Formação</li>
+                    <li className="unselectable">Currículo</li>
                 </a>
                 <a className="link"
                     href="/"

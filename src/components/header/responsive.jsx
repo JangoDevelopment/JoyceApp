@@ -18,7 +18,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { RiHomeLine } from "react-icons/ri";
 import { MdAssignmentInd } from "react-icons/md";
-import { FiLayers, FiCoffee } from "react-icons/fi";
+import { FiLayers, FiCoffee, FiFile } from "react-icons/fi";
 
 const drawerWidth = 240;
 
@@ -136,19 +136,27 @@ export default function PersistentDrawerRight() {
                 </div>
                 <Divider />
                 <List>
-                    {["Home", "Apresentação", "Portifólio", "Contato"].map((text, index) => (
+                    {["Home", "Serviços", "Currículo", "Portifólio", "Contato"].map((text, index) => (
                         <ListItem button key={text}>
-                            <Link
+                            <a
                                 className="unselectable link flex"
-                                to={index === 0 ? "/" : index === 1 ? "/apresentacao" : index === 2 ? "portifolio" : "/contato"}>
+                                href="/"
+                                onClick={e => {
+                                    let hero = document.getElementById(index === 0 ? "home" : index === 1 ? "apresentacao" : index === 2 ? 'formacao' : index === 3 ? "portifolio" : "contato");
+                                    e.preventDefault();
+                                    const yOffset = index === 3 ? +80 : -40;
+                                    const y =hero && hero.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                                    window.scrollTo({top: y, behavior: 'smooth'});
+                            }}>
                                 <ListItemIcon>
                                     {index === 0 ? <RiHomeLine className={classes.icon} /> : null}
                                     {index === 1 ? <MdAssignmentInd className={classes.icon} /> : null}
-                                    {index === 2 ? <FiLayers className={classes.icon} /> : null}
-                                    {index === 3 ? <FiCoffee className={classes.icon} /> : null}
+                                    {index === 2 ? <FiFile className={classes.icon} /> : null}
+                                    {index === 3 ? <FiLayers className={classes.icon} /> : null}
+                                    {index === 4 ? <FiCoffee className={classes.icon} /> : null}
                                 </ListItemIcon>
                                 <ListItemText primary={text} />
-                            </Link>
+                            </a>
                         </ListItem>
                     ))}
                 </List>
