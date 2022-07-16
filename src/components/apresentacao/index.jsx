@@ -23,8 +23,12 @@ const ApresentacaoComponent = (props) => {
         changeServiceImage(arrayCopy[index].toggled, arrayCopy[index].imageBackgroundClass);
     }
 
-    function toggleClass(index) {
+    function toggleDescriptionClass(index) {
         return toggleServices.services[index].toggled ? "showListElement" : "hideListElement";
+    }
+
+    function toggleSubDescriptionClass(index) {
+        return index !== 1 ? "hideListElement" : toggleServices.services[index].toggled ? "showListElement" : "hideListElement";
     }
 
     function toggleIconClass(index) {
@@ -50,9 +54,9 @@ const ApresentacaoComponent = (props) => {
                             return (
                                 <div className="servico">
                                     <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo} <div className={toggleIconClass(i)}></div> </h3>
-                                    <h4 className={"descricao " + toggleClass(i)}>{servico.descricao}</h4>
-                                    <h4 className={"subdescricao " + toggleClass(i)}>{servico.residential}</h4>
-                                    <h4 className={"subdescricao " + toggleClass(i)}>{servico.comercial}</h4>
+                                    <h4 className={"descricao " + toggleDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.descricao}</h4>
+                                    <h4 className={"subdescricao " + toggleSubDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.residential}</h4>
+                                    <h4 className={"subdescricao " + toggleSubDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.comercial}</h4>
                                 </div>
                             );
                         })}
@@ -130,9 +134,9 @@ const ApresentacaoComponent = (props) => {
                             return (
                                 <div className="servico">
                                     <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo} <div class={toggleIconClass(i)}></div></h3>
-                                    <h4 className={"descricao " + toggleClass(i)}>{servico.descricao}</h4>
-                                    <h4 className={"subdescricao " + toggleClass(i)}>{servico.residential}</h4>
-                                    <h4 className={"subdescricao " + toggleClass(i)}>{servico.comercial}</h4>
+                                    <h4 className={"descricao " + toggleDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.descricao}</h4>
+                                    <h4 className={"subdescricao " + toggleSubDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.residential}</h4>
+                                    <h4 className={"subdescricao " + toggleSubDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.comercial}</h4>
                                 </div>
                             );
                         })}

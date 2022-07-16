@@ -37,7 +37,7 @@
 }
 
 .apresentacao h1 {
-    font-size: 56px;
+    font-size: 64px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     margin-top: 30px;
@@ -64,7 +64,7 @@
     font-family: "Poppins", sans-serif;
     text-align: left;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 10px;
     color: var(--logo-yellow);
     cursor: pointer;
@@ -74,10 +74,14 @@
 
 .apresentacao .block_1 .info .servico .descricao {
     text-align: left;
+    padding-right: 12px;
+    font-size: 16px;
 }
 
 .apresentacao .block_1 .info .servico .subdescricao {
     text-align: left;
+    padding-right: 12px;
+    font-size: 16px;
     padding-top: 4px;
 }
 
@@ -110,7 +114,7 @@
     background-image: url("./images/1.jpg");
 }
 .apresentacao .block_1 .arquitetonico_background_image {
-    background-image: url("./images/arquitetonico.jpg");
+    background-image: url("./images/arquitetonico.jpeg");
 }
 .apresentacao .block_1 .interiores_background_image {
     background-image: url("./images/interiores.jpg");
@@ -270,7 +274,7 @@
         font-weight: 600;
         font-size: 20px;
         margin-bottom: 10px;
-        color: var(--dark-yellow);
+        color: var(--logo-yellow);
         display: flex;
         align-items: center;
     }
