@@ -8,15 +8,19 @@ import servicos from "../../data/servicos.js";
 
 const ApresentacaoComponent = (props) => {
     const { width } = useWindowDimensions();
+    const defaultServicesImageBackgroundClass= "default_background_image";
+
     const [toggleServices, setToggleServices] = useState({
         services: servicos
     });
+    const [servicesImageBackgroundClass, setServicesImageBackgroundClass] = useState(defaultServicesImageBackgroundClass);
 
     function toggleActive(index) {
         let arrayCopy = [...toggleServices.services];
 
         arrayCopy[index].toggled = !arrayCopy[index].toggled;
         setToggleServices({ ...toggleServices, services: arrayCopy });
+        changeServiceImage(arrayCopy[index].toggled, arrayCopy[index].imageBackgroundClass);
     }
 
     function toggleClass(index) {
@@ -25,6 +29,15 @@ const ApresentacaoComponent = (props) => {
 
     function toggleIconClass(index) {
         return toggleServices.services[index].toggled ? "arrow toggle-down" : "arrow toggle-right";
+    }
+
+    function changeServiceImage(serviceJustOpened, imageBackgroundClass) {
+        if (serviceJustOpened) {
+            setServicesImageBackgroundClass(imageBackgroundClass);
+        }
+        if (!toggleServices.services.find(service => service.toggled)) {
+            setServicesImageBackgroundClass(defaultServicesImageBackgroundClass);
+        }
     }
 
     const pc_component = (
@@ -36,7 +49,7 @@ const ApresentacaoComponent = (props) => {
                         {toggleServices.services.map((servico, i) => {
                             return (
                                 <div className="servico">
-                                    <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo} <div class={toggleIconClass(i)}></div> </h3>
+                                    <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo} <div className={toggleIconClass(i)}></div> </h3>
                                     <h4 className={"descricao " + toggleClass(i)}>{servico.descricao}</h4>
                                     <h4 className={"subdescricao " + toggleClass(i)}>{servico.residential}</h4>
                                     <h4 className={"subdescricao " + toggleClass(i)}>{servico.comercial}</h4>
@@ -45,7 +58,7 @@ const ApresentacaoComponent = (props) => {
                         })}
                     </div>
                 </div>
-                <div className="background_image"></div>
+                <div className={"background_image "+servicesImageBackgroundClass}></div>
             </div>
             <div className="block_2" id="formacao">
                 <div className="info">

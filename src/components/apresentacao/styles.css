@@ -102,9 +102,27 @@
     clip-path: polygon(52% 0, 100% 0, 100% 100%, 0 100%);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
-    background-image: url("./images/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.apresentacao .block_1 .default_background_image {
+    background-image: url("./images/1.jpg");
+}
+.apresentacao .block_1 .arquitetonico_background_image {
+    background-image: url("./images/arquitetonico.jpg");
+}
+.apresentacao .block_1 .interiores_background_image {
+    background-image: url("./images/interiores.jpg");
+}
+.apresentacao .block_1 .legal_background_image {
+    background-image: url("./images/legal.png");
+}
+.apresentacao .block_1 .modelagem_background_image {
+    background-image: url("./images/modelagem.webp");
+}
+.apresentacao .block_1 .acompanhamento_background_image {
+    background-image: url("./images/acompanhamentos.webp");
 }
 
 .apresentacao .block_2 {
