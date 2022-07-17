@@ -2,9 +2,9 @@ import React, {useEffect} from "react";
 import "./styles.css";
 import PaginaComponente from "../../components/pagina_projeto";
 import Footer from "../../components/footer";
-import Header from "../../components/header";
+import Header from "../../components/header_projeto";
 
-import PersistentDrawerRight from "../../components/header/responsive";
+import PersistentDrawerRight from "../../components/header_projeto/responsive";
 
 const Projeto = (props) => {
 

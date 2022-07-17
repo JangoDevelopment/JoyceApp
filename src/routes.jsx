@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, HashRouter, Switch, BrowserRouter } from "react-router-dom";
+import React, {useEffect} from "react";
+import { Route, HashRouter, Switch, BrowserRouter} from "react-router-dom";
 
 /****IMPORT PAGES******/
 
@@ -10,20 +10,23 @@ import Portifolio from "./pages/Portifolio";
 import Apresentacao from "./pages/Apresentacao";
 import Projeto from "./pages/Project";
 const Routes = () => {
-
     return (
-        // <HashRouter>
-        //     <Switch>
-            <BrowserRouter>
+        <HashRouter>
+            <Switch>
+            {/* // <BrowserRouter> */}
                 <Route component={SinglePage} exact path="/" />
+                <Route component={SinglePage} exact path="/apresentacao" />
+                <Route component={SinglePage} exact path="/formacao" />
+                <Route component={SinglePage} exact path="/portifolio" />
+                <Route component={SinglePage} exact path="/contato" />
+                <Route component={Projeto} path="/projeto" />
                 {/* <Route component={Home} exact path="/home" />
                 <Route component={Contact} exact path="/contato" />
-                <Route component={Projeto} path="/projeto" />
                 <Route component={Portifolio} exact path="/portifolio" />
                 <Route component={Apresentacao} exact path="/apresentacao" /> */}
-            </BrowserRouter>
-        //     </Switch>
-        // </HashRouter>
+            {/* // </BrowserRouter> */}
+            </Switch>
+        </HashRouter>
     );
 };
 

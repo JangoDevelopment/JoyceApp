@@ -5,11 +5,21 @@ import "./styles.css";
 
 const Header = (props) => {
     useEffect(() => {
-        let url = window.location.href.split("/");
-        let target = url[url.length - 1].toLowerCase();
-        let element = document.getElementById(target);
-        element && element.scrollIntoView({ behavior: "smooth", block: "start" });
+        window.setTimeout(() => {
+            let url = window.location.href.split("/");
+            let target = url[url.length - 1].toLowerCase();
+            let element = document.getElementById(target);
+            if (target === "formacao") {
+                console.log('entrou no if de formacao');
+                const yOffset = -80;
+                const y = element && element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({top: y, behavior: 'smooth'});
+            } else {
+                element && element.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        });
       }, []);
+
     return (
         <header className="header flex">
             <div className="logo flex">
