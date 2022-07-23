@@ -166,7 +166,7 @@
 .portifolio .projetos .section_options {
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .portifolio .projetos .section_options .section_box {
@@ -176,6 +176,7 @@
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
     border-radius: 4px;
     transition: ease-in-out 0.3s;
+    margin: 10px;
 }
 .portifolio .projetos .section_options .section_box:hover {
     transform: scale(1.01);
