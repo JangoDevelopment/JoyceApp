@@ -80,6 +80,16 @@
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+.contato_form .form .budget-btn {
+    background-color: var(--logo-yellow);
+    border:none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 15px;
+    margin: 25px;
+}
+
 @media screen and (min-width:1371px) {
     .contato_form .form .map {
         width: 400px;
@@ -89,7 +99,7 @@
 @media screen and (min-width:769px) and (max-width:1370px){
 
     .contato_form{
-        min-height: 92vh;
+        min-height: 60vh;
     }
 
     .contato_form .form{
@@ -115,6 +125,7 @@
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        min-height: 60vh;
     }
 
     .contato_form .background {
