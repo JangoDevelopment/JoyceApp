@@ -10,30 +10,59 @@
     right: 0;
     top: 0;
     height: 100%;
+    max-width: 50vw;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
 .carousel-container .logo-div .logo {
-    width: 90%;
+    width: 60%;
 }
 
 @media screen and (min-width:1800px){
     .carousel-container .logo-div {
-        right: 200px;
+        width: 78%;
     }
     .carousel-container .logo-div .logo {
-        width: 100%;
+        width: 50%;
     }
 }
-@media screen and (min-width:769px) and (max-width:1370px){
+@media screen and (min-width:1097px) and (max-width:1799px){
+    .carousel-container .logo-div {
+        width: 78%;
+    }
+    .carousel-container .logo-div .logo {
+        width: 60%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1096px){
+    /* .carousel-container .logo-div {
+        max-width: 78%;
+    } */
     .carousel-container .logo-div .logo {
         width: 70%;
     }
 }
-@media screen and (min-width:321px) and (max-width:768px){
+@media screen and (min-width:525px) and (max-width:768px){
+    .carousel-container .logo-div {
+        justify-content: flex-end;
+        align-items: flex-end;
+        max-width: 78%;
+    }
+    .carousel-container .logo-div .logo {
+        width: 60%;
+        margin-bottom: 20%;
+    }
+}
+@media screen and (min-width:321px) and (max-width:524px){
+    .carousel-container .logo-div {
+        justify-content: flex-end;
+        align-items: flex-end;
+        max-width: 100%;
+    }
     .carousel-container .logo-div .logo {
         width: 70%;
+        margin-bottom: 20%;
     }
 }
