@@ -38,14 +38,14 @@ const PortifolioComponent = (props) => {
                             </div>
                         </Link>
                     </div>
-                    <div className="section flex-column">
+                    {/* <div className="section flex-column">
                         <Link activeClass="active" to="obras" spy={true} smooth={true} duration={500} offset={-50}>
                             <div className="box flex block_3">
                                 <img className="unselectable box_img" src={img3} alt="" />
                                 <h3 className="title unselectable">acessoria de obras</h3>
                             </div>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div name="test1" className="projetos flex-column">
@@ -72,7 +72,7 @@ const PortifolioComponent = (props) => {
                                 <h3 className="title unselectable">comercial</h3>
                             </Link>
 
-                            <Link
+                            {/* <Link
                                 className="section_box flex block_3"
                                 activeClass="active"
                                 to="interiores"
@@ -81,7 +81,7 @@ const PortifolioComponent = (props) => {
                                 duration={500}
                                 offset={-50}>
                                 <h3 className="title unselectable">interiores</h3>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>
@@ -92,18 +92,18 @@ const PortifolioComponent = (props) => {
                 <div name="comercial" className="sub_subsection">
                     <PortifolioSection section_title={"comercial"} section_list={projetos.comercial} section_description={vazio} />
                 </div>
-                <div name="interiores" className="sub_subsection">
+                {/* <div name="interiores" className="sub_subsection">
                     <PortifolioSection section_title={"interiores"} section_list={projetos.interiores} section_description={vazio} />
-                </div>
+                </div> */}
             </div>
             <div className="grey_block">
                 <div name="reforma" className="subsection">
                     <PortifolioSection section_title={"Reformas"} section_list={projetos.reformas} section_description={description_reformas} />
                 </div>
             </div>
-            <div name="obras" className="subsection">
+            {/* <div name="obras" className="subsection">
                 <PortifolioSection section_title={"Acessoria de Obras"} section_list={projetos.obras} section_description={description_obras} />
-            </div>
+            </div> */}
         </div>
     );
 };

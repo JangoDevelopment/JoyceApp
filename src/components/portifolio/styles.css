@@ -166,7 +166,7 @@
 .portifolio .projetos .section_options {
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .portifolio .projetos .section_options .section_box {
@@ -328,7 +328,7 @@
     .portifolio .parte1 .box img {
         width: 38%;
         height: auto;
-        margin-bottom: 10%;
+        margin-bottom: 1%;
     }
 
     .portifolio .parte1 .box .title {
