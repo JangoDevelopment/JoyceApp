@@ -62,7 +62,7 @@ const Header = (props) => {
                         const y =hero && hero.getBoundingClientRect().top + window.pageYOffset -40;
                         window.scrollTo({top: y, behavior: 'smooth'});
                     }}>
-                    <li className="unselectable">Currículo</li>
+                    <li className="unselectable">Apresentação</li>
                 </a>
                 <a className="link"
                     href="/"

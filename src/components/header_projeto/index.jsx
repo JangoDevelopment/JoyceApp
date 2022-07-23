@@ -27,7 +27,7 @@ const Header = (props) => {
                     <li className="unselectable">Serviços</li>
                 </Link>
                 <Link className="link" to={"/formacao"}>
-                    <li className="unselectable">Currículo</li>
+                    <li className="unselectable">Apresentação</li>
                 </Link>
                 <Link className="link" to={"/portifolio"}>
                     <li className="unselectable">Portifolio</li>

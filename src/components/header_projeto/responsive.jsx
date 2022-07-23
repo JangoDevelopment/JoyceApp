@@ -136,7 +136,7 @@ export default function PersistentDrawerRight() {
                 </div>
                 <Divider />
                 <List>
-                    {["Home", "Serviços", "Currículo", "Portifólio", "Contato"].map((text, index) => (
+                    {["Home", "Serviços", "Apresentação", "Portifólio", "Contato"].map((text, index) => (
                         <ListItem button key={text}>
                             <Link
                                 className="unselectable link flex"
