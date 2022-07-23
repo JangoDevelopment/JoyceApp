@@ -33,7 +33,7 @@
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-weight: 600;
-    color: var(--dark-yellow);
+    color: var(--logo-yellow);
     font-size: 45px;
     margin-bottom: 8px;
 }
@@ -49,7 +49,7 @@
     margin-top: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    color: var(--dark-yellow);
+    color: var(--logo-yellow);
     margin-bottom: 5px;
     font-size: 32px;
 }

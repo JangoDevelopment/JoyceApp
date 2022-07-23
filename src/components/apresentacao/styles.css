@@ -92,7 +92,7 @@
 }
 
 .apresentacao .block_1 h1 {
-    color: var(--dark-yellow);
+    color: var(--logo-yellow);
 }
 
 .apresentacao .block_1 .background_image {
@@ -202,9 +202,11 @@
     clip-path: polygon(0 0, 100% 0, 52% 100%, 0 100%);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
-    background-image: url("./images/2.jpg");
+    /* background-image: url("./images/2.jpg"); */
+    background-image: url("./images/apresentacao.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: 20%;
 }
 
 /**MOBILE**/
@@ -251,7 +253,7 @@
     }
 
     .mobile .block_1 h1 {
-        color: var(--dark-yellow);
+        color: var(--logo-yellow);
     }
 
     .mobile .block_1 .info {

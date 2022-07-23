@@ -40,7 +40,7 @@
 }
 
 .footer .coffee_icon:hover {
-    color: var(--dark-yellow);
+    color: var(--logo-yellow);
 }
 
 .footer .icons {
@@ -106,10 +106,10 @@
     }
 
     .footer p span {
-        color: var(--dark-yellow);
+        color: var(--logo-yellow);
     }
 
     .footer .icon {
-        color: var(--dark-yellow);
+        color: var(--logo-yellow);
     }
 }

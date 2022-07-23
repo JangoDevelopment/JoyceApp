@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import React from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 import "./styles.css";

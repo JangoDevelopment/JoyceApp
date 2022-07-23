@@ -13,7 +13,7 @@
 }
 
 .link:hover {
-    color: var(--dark-yellow);
+    color: var(--logo-yellow);
 }
 
 .unselectable {
