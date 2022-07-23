@@ -15,7 +15,7 @@ function Example(props) {
 
     return (
         <div className="carousel-container" id="home">
-            <Carousel indicators={false} timeout={500} interval={1800}>
+            <Carousel indicators={false} timeout={200} interval={1800}>
                 {items.map((item, i) => (
                     <Item key={i} item={item} />
                 ))}
