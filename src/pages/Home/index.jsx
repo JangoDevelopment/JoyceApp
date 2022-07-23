@@ -8,7 +8,7 @@ import HomePanel from "../../components/home_panel";
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@material-ui/core";
 // import PersistentDrawerRight from "../../components/header/responsive";
-import logo_img from "../../assets/logo.png";
+import logo_img from "../../assets/logo_final.png";
 
 function Example(props) {
     var items = [{ tela: <HomePanel painel={0} /> }, { tela: <HomePanel painel={1} /> }, { tela: <HomePanel painel={2} /> }];
