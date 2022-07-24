@@ -66,7 +66,7 @@ const ApresentacaoComponent = (props) => {
             </div>
             <div className="block_2" id="formacao">
                 <div className="info">
-                    <h1>Formação</h1>
+                    <h1>Apresentação</h1>
                     <div className="scrollable">
                         <section className="curriculo flex-column">
                             <h2 className="section_title">Apresentação</h2>
@@ -145,7 +145,7 @@ const ApresentacaoComponent = (props) => {
             </div>
             <div className="block_2" id="formacao">
                 <div className="info">
-                    <h1>Formação</h1>
+                    <h1>Apresentação</h1>
                     <div className="scrollable">
                         <section className="curriculo flex-column">
                             <h2 className="section_title">Formação</h2>
