@@ -90,6 +90,11 @@
     margin: 25px;
 }
 
+.contato_form .form .budget-btn:hover,
+.contato_form .form .budget-btn:active {
+    background-color: var(--dark-yellow);
+}
+
 @media screen and (min-width:1371px) {
     .contato_form .form .map {
         width: 400px;
