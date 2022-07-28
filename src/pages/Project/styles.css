@@ -197,7 +197,7 @@
 .projeto_component_mobile .additional_info .bloco {
     height: 12vh;
     width: 100%;
-    background-color: #ffdc5f;
+    background-color: var(--logo-yellow);
     border-radius: 3px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
