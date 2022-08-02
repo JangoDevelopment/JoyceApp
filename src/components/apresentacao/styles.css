@@ -194,7 +194,7 @@
 }
 
 .apresentacao .block_2 h1 {
-    color: var(--dark-aqua);
+    color: var(--logo-yellow);
 }
 
 .apresentacao .block_2 .background_image {
@@ -316,12 +316,16 @@
         font-weight: 600;
         font-size: 24px;
         margin-bottom: 10px;
-        color: var(--dark-aqua);
+        color: var(--logo-yellow);
     }
 
     .mobile .block_2 .info .curriculo .curso .titulo {
         font-family: "Poppins", sans-serif;
         font-weight: 600;
+    }
+
+    .mobile .block_2 .info .curriculo .curso .texto-apresentacao {
+        font-family: "Poppins", sans-serif;
     }
 
     .mobile .block_2 .info .curriculo .curso .local {
@@ -348,7 +352,7 @@
     } */
 
     .mobile .block_2 h1 {
-        color: var(--dark-aqua);
+        color: var(--logo-yellow);
     }
 }
 
