@@ -72,12 +72,9 @@
     font-size: 22px;
 }
 
-.contato_form .form .map {
-    margin-top: 32px;
-    border-radius: 4px;
-    width: 500px;
-    height: 200px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+.contato_form .form a .phone:hover,
+.contato_form .form a .phone:active {
+    color: var(--logo-yellow);
 }
 
 .contato_form .form .budget-btn {
@@ -86,7 +83,7 @@
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    padding: 5px 15px;
+    padding: 20px;
     margin: 25px;
 }
 
@@ -95,12 +92,26 @@
     background-color: var(--dark-yellow);
 }
 
-@media screen and (min-width:1371px) {
-    .contato_form .form .map {
-        width: 400px;
-        height: 140px;
-    }
+.contato_form .form .icons {
+    width: 100%;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
 }
+
+.contato_form .form .icon {
+    color: #525252;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.contato_form .form .icon:hover {
+    color: var(--logo-yellow);
+}
+
 @media screen and (min-width:769px) and (max-width:1370px){
 
     .contato_form{
@@ -118,11 +129,6 @@
     .contato_form .form a .whatsapp{
         font-size: 15px;
     }
-
-    .contato_form .form .map {
-        width: 340px;
-        height: 140px;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -131,6 +137,7 @@
         margin-right: auto;
         width: 100%;
         min-height: 60vh;
+        padding-bottom: 40px;
     }
 
     .contato_form .background {
@@ -155,11 +162,5 @@
 
     .contato_form .form h3 {
         font-size: 24px;
-    }
-
-    .contato_form .form .map {
-        width: 100%;
-        height: 400px;
-        margin-bottom: 100px;
     }
 }

@@ -18,7 +18,7 @@ const Contact = () => {
             {/* <Header />
             <PersistentDrawerRight /> */}
             <FormContatos />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };

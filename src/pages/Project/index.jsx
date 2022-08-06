@@ -17,7 +17,7 @@ const Projeto = (props) => {
             <Header />
             <PersistentDrawerRight />
             <PaginaComponente />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
