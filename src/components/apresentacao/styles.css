@@ -43,7 +43,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .apresentacao .block_1 .info {
@@ -117,13 +117,16 @@
     background-image: url("./images/1.jpg");
 }
 .apresentacao .block_1 .arquitetonico_background_image {
-    background-image: url("./images/arquitetonico.jpeg");
+    background-image: url("./images/arquitetonico.jpg");
 }
 .apresentacao .block_1 .interiores_background_image {
-    background-image: url("./images/interiores.jpg");
+    background-image: url("./images/interiores.png");
 }
 .apresentacao .block_1 .legal_background_image {
     background-image: url("./images/legal.png");
+}
+.apresentacao .block_1 .consultoria_background_image {
+    background-image: url("./images/consultoria.png");
 }
 .apresentacao .block_1 .modelagem_background_image {
     background-image: url("./images/modelagem.webp");
@@ -157,8 +160,10 @@
     color: var(--dark-aqua);
 }
 
-.apresentacao .block_2 .info .curriculo .curso .texto-apresentacao {
+.apresentacao .block_2 .info .curriculo .curso h4 {
     font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 2px 0;
 }
 
 .apresentacao .block_2 .info .curriculo .curso .titulo {
@@ -324,7 +329,7 @@
         font-weight: 600;
     }
 
-    .mobile .block_2 .info .curriculo .curso .texto-apresentacao {
+    .mobile .block_2 .info .curriculo .curso h4 {
         font-family: "Poppins", sans-serif;
     }
 
