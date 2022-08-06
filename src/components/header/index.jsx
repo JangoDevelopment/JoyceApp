@@ -71,7 +71,7 @@ const Header = (props) => {
                         e.preventDefault();
                         hero && hero.scrollIntoView({ behavior: "smooth", block: "start" });
                     }}>
-                    <li className="unselectable">Portifolio</li>
+                    <li className="unselectable">Projetos</li>
                 </a>
                 <a className="link"
                     href="/"
