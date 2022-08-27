@@ -11,7 +11,7 @@
     right: 0;
     top: 0;
     height: 100%;
-    max-width: 50vw;
+    max-width: 29%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
         width: 78%;
     }
     .carousel-container .logo-div .logo {
-        width: 50%;
+        width: 80%;
     }
 }
 @media screen and (min-width:1097px) and (max-width:1799px){
@@ -34,7 +34,7 @@
         width: 78%;
     }
     .carousel-container .logo-div .logo {
-        width: 60%;
+        width: 90%;
     }
 }
 @media screen and (min-width:769px) and (max-width:1096px){
@@ -42,7 +42,7 @@
         max-width: 78%;
     } */
     .carousel-container .logo-div .logo {
-        width: 70%;
+        width: 90%;
     }
 }
 @media screen and (min-width:525px) and (max-width:768px){
