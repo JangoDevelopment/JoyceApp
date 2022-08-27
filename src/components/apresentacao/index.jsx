@@ -28,11 +28,15 @@ const ApresentacaoComponent = (props) => {
     }
 
     function toggleSubDescriptionClass(index) {
-        return index !== 1 && index !== 3 ? "hideListElement" : toggleServices.services[index].toggled ? "showListElement" : "hideListElement";
+        return index === 0 || index === 2 ? "hideListElement" : toggleServices.services[index].toggled ? "showListElement" : "hideListElement";
     }
 
     function toggleSubSubDescriptionClass(index) {
-        return index !== 1 ? "hideListElement" : toggleServices.services[index].toggled ? "showListElement" : "hideListElement";
+        return index !== 1 && index !== 4 && index !== 5 ?  "hideListElement" : toggleServices.services[index].toggled ? "showListElement" : "hideListElement";
+    }
+
+    function toggleSubSubSubDescriptionClass(index) {
+        return index !== 5 ? "hideListElement" : toggleServices.services[index].toggled ? "showListElement" : "hideListElement";
     }
 
     function toggleIconClass(index) {
@@ -58,9 +62,10 @@ const ApresentacaoComponent = (props) => {
                             return (
                                 <div className="servico">
                                     <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo} <div className={toggleIconClass(i)}></div> </h3>
-                                    <h4 className={"descricao " + toggleDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.descricao}</h4>
-                                    <h4 className={"subdescricao " + toggleSubDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.subDescription}</h4>
-                                    <h4 className={"subdescricao " + toggleSubSubDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.subSubDescription}</h4>
+                                    <p className={"descricao " + toggleDescriptionClass(i)}>{servico.descricao}</p>
+                                    <p className={"subdescricao " + toggleSubDescriptionClass(i)}>{servico.subDescription}</p>
+                                    <p className={"subdescricao " + toggleSubSubDescriptionClass(i)}>{servico.subSubDescription}</p>
+                                    <p className={"subdescricao " + toggleSubSubSubDescriptionClass(i)}>{servico.subSubSubDescription}</p>
                                 </div>
                             );
                         })}
@@ -110,9 +115,10 @@ const ApresentacaoComponent = (props) => {
                             return (
                                 <div className="servico">
                                     <h3 className="titulo" onClick={() => toggleActive(i)}>{servico.titulo} <div class={toggleIconClass(i)}></div></h3>
-                                    <h4 className={"descricao " + toggleDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.descricao}</h4>
-                                    <h4 className={"subdescricao " + toggleSubDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.subDescription}</h4>
-                                    <h4 className={"subdescricao " + toggleSubSubDescriptionClass(i)}>&nbsp;&nbsp;&nbsp;&nbsp;{servico.subSubDescription}</h4>
+                                    <h4 className={"descricao " + toggleDescriptionClass(i)}>{servico.descricao}</h4>
+                                    <h4 className={"subdescricao " + toggleSubDescriptionClass(i)}>{servico.subDescription}</h4>
+                                    <h4 className={"subdescricao " + toggleSubSubDescriptionClass(i)}>{servico.subSubDescription}</h4>
+                                    <h4 className={"subdescricao " + toggleSubSubSubDescriptionClass(i)}>{servico.subSubSubDescription}</h4>
                                 </div>
                             );
                         })}
