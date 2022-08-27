@@ -75,61 +75,15 @@ export default {
             capa: "images/capas/comercial_1.jpg",
             galeria: gallery.ser_stella
         },
-    ],
-    // interiores: [
-    //     {
-    //         id: 1,
-    //         titulo: "Sala São José",
-    //         local: "São José dos Campos",
-    //         ano: 2020,
-    //         descricao:
-    //             "O clientes queriam dar uma cara nova para essa  Sala de Estar/Tv, mas não queriam nada de “quebra – quebra”. O painel em madeira era um item que deveria continuar no ambiente. Mudamos os móveis e o layout da sala. Demos novas cores e texturas paras as paredes e finalizamos com uma sanca de gesso e uma iluminação aconchegante. Confira como ficou o resultado! ",
-    //         capa: "images/capas/interiores_1.png",
-    //         galeria: gallery.casa_sjc
-    //     },
-    // ],
-    reformas: [
         {
-            id: 1,
-            titulo: "Casa MC",
+            id: 4,
+            titulo: "Galpão Comercial 2",
             local: "Guaratinguetá",
-            ano: 2019,
+            ano: 2022,
             descricao:
-                "A casa MC foi construída há mais de 60 anos. Os cômodos eram mal divididos, as paredes precisavam de reboco novo, o piso era de chão batido, entre outras coisas. O Desafio foi transformar essa casa em uma casa atual com ambientes integrados, suíte e quartos confortáveis. Veja fotos do antes e depois.",
-            capa: "images/capas/reformas_1.jpg",
-            galeria: gallery.casa_mc
-        },
-        {
-            id: 2,
-            titulo: "Cozinha Rústica",
-            local: "Pedrinha - Guaratinguetá",
-            ano: 2020,
-            descricao:
-                "Depois de quase 20 anos com uma casa agitada e uma cozinha pequenina, os clientes resolveram ampliar esse ambiente que era centro de todas as reuniões. Agora a nova cozinha possuí bancadas e armários funcionais, perfeito para as reuniões familiares.",
-            capa: "images/capas/reformas_2.jpg",
-            galeria: gallery.cozinha_rustica
-        },
+                "Adicionar uma descrição para esse projeto!!!!!!!!!!!!!!!!",
+            capa: "images/capas/comercial_4.jpg",
+            galeria: gallery.galpao_box_tf
+        }
     ],
-    // obras: [
-    //     {
-    //         id: 1,
-    //         titulo: "Casa MC",
-    //         local: "Guaratinguetá",
-    //         ano: 2019,
-    //         descricao:
-    //             "A casa MC foi construída há mais de 60 anos. Os cômodos eram mal divididos, as paredes precisavam de reboco novo, o piso era de chão batido, entre outras coisas. O Desafio foi transformar essa casa em uma casa atual com ambientes integrados, suíte e quartos confortáveis. Veja fotos do antes e depois.",
-    //         capa: "images/capas/reformas_1.jpg",
-    //         galeria: gallery.casa_mc
-    //     },
-    //     {
-    //         id: 2,
-    //         titulo: "Cozinha Rústica",
-    //         local: "Pedrinha - Guaratinguetá",
-    //         ano: 2020,
-    //         descricao:
-    //             "Depois de quase 20 anos com uma casa agitada e uma cozinha pequenina, os clientes resolveram ampliar esse ambiente que era centro de todas as reuniões. Agora a nova cozinha possuí bancadas e armários funcionais, perfeito para as reuniões familiares.",
-    //         capa: "images/capas/reformas_2.jpg",
-    //         galeria: gallery.cozinha_rustica
-    //     },
-    // ],
 };
