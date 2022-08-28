@@ -8,14 +8,17 @@ const FormContatos = (props) => {
     return (
         <div className="contato_form" id="contato">
             <form className="form flex-column">
-                <h1>vamos tomar um café?</h1>
-                <a class='link' href="https://api.whatsapp.com/send?phone=5512981470468&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener noreferrer"><IoLogoWhatsapp className="whatsapp link" /> <h2 className="phone">(12) 98147 0468</h2></a>
-                <h2>arq.joycecacador@gmail.com</h2>
-                <br />
-                <h1>me encontre aqui</h1>
-                <h2>Rua Monsenhor Aníbal</h2>
-                <h2>de Melo, 206 - Pedregulho</h2>
-                <h2>Guaratingueta, SP</h2>
+                <div>
+                    <h1>vamos tomar um café?</h1>
+                    <a class='link' href="https://api.whatsapp.com/send?phone=5512981470468&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener noreferrer"><IoLogoWhatsapp className="whatsapp link" /> <h2 className="phone">(12) 98147 0468</h2></a>
+                    <h2>arq.joycecacador@gmail.com</h2>
+                </div>
+                <div>
+                    <h1>me encontre aqui</h1>
+                    <h2>Rua Monsenhor Aníbal</h2>
+                    <h2>de Melo, 206 - Pedregulho</h2>
+                    <h2>Guaratingueta, SP</h2>
+                </div>
                 <button className="budget-btn">
                     <h2>
                         <a className="link" href="https://docs.google.com/forms/d/e/1FAIpQLScnzX8qSuC5bx_M9DyP9yLediE7pep1-jcQawgbxtM3M9gnbg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
