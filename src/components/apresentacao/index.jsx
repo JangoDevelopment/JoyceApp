@@ -79,23 +79,23 @@ const ApresentacaoComponent = (props) => {
                     <div className="scrollable">
                         <section className="curriculo flex-column">
                             <div className="curso flex-column">
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Apaixonada pelo meu trabalho, acredito que a Arquitetura e o Urbanismo tem o poder de transformar vidas. Minha missão é apresentar o melhor
+                                <h4>Apaixonada pelo meu trabalho, acredito que a Arquitetura e o Urbanismo tem o poder de transformar vidas. Minha missão é apresentar o melhor
                                     resultado dentro dos parâmetros desejados e buscar sempre as melhores soluções para o cliente.</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Sou natural de Guaratinguetá, contudo sou formada em Arquitetura e Urbanismo pela Pontifícia Universidade Católica de Campinas (PUC-Campinas).</h4>
+                                <h4>Sou natural de Guaratinguetá, contudo sou formada em Arquitetura e Urbanismo pela Pontifícia Universidade Católica de Campinas (PUC-Campinas).</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Meus primeiros passos no universo da Arquitetura se deram em um escritório de renome na cidade de Guaratinguetá, Ricardo Rabello Arquitetura, onde estagiei por 1 ano e 3 meses.</h4>
+                                <h4>Meus primeiros passos no universo da Arquitetura se deram em um escritório de renome na cidade de Guaratinguetá, Ricardo Rabello Arquitetura, onde estagiei por 1 ano e 3 meses.</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Após minha graduação tive oportunidade de trabalhar por quase 2 anos em um escritório em São Paulo, Thais Ruiz Arquitetura Colaborativa, onde era responsável pelos Projetos Legais
+                                <h4>Após minha graduação tive oportunidade de trabalhar por quase 2 anos em um escritório em São Paulo, Thais Ruiz Arquitetura Colaborativa, onde era responsável pelos Projetos Legais
                                     do escritório e onde também tive oportunidade de participar de diversos e incríveis projetos, tanto no setor de criação, quanto no setor de detalhamento e gerenciamento de obra.</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Hoje, atuo regularmente em minha cidade natal e região do Vale do Paraíba, porém, acredito que arquitetura tem o poder de quebrar barreiras geográficas, assim oferecemos nossos
+                                <h4>Hoje, atuo regularmente em minha cidade natal e região do Vale do Paraíba, porém, acredito que arquitetura tem o poder de quebrar barreiras geográficas, assim oferecemos nossos
                                     serviços de projeto e consultoria para qualquer lugar do mundo.</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Tenho me especializado na metodologia BIM de projetos, por entender que esse método oferece os melhores resultados para meus clientes, garantindo um projeto preciso e compatível com outros
+                                <h4>Tenho me especializado na metodologia BIM de projetos, por entender que esse método oferece os melhores resultados para meus clientes, garantindo um projeto preciso e compatível com outros
                                     setores da construção. Desta forma, melhorando o planejamento da obra e evitando imprevistos indesejáveis.</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Meu sonho é fazer uma arquitetura de qualidade para todos e te ajudar a planejar os seus sonhos. Quer saber mais? Entre em contato e vamos descobrir como eu posso te ajudar.</h4>
+                                <h4>Meu sonho é fazer uma arquitetura de qualidade para todos e te ajudar a planejar os seus sonhos. Quer saber mais? Entre em contato e vamos descobrir como eu posso te ajudar.</h4>
                             </div>
                         </section>
                     </div>
@@ -131,23 +131,23 @@ const ApresentacaoComponent = (props) => {
                     <div className="scrollable">
                         <section className="curriculo flex-column">
                             <div className="curso flex-column">
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Apaixonada pelo meu trabalho, acredito que a Arquitetura e o Urbanismo tem o poder de transformar vidas. Minha missão é apresentar o melhor
+                                <h4>Apaixonada pelo meu trabalho, acredito que a Arquitetura e o Urbanismo tem o poder de transformar vidas. Minha missão é apresentar o melhor
                                     resultado dentro dos parâmetros desejados e buscar sempre as melhores soluções para o cliente.</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Sou natural de Guaratinguetá, contudo sou formada em Arquitetura e Urbanismo pela Pontifícia Universidade Católica de Campinas (PUC-Campinas).</h4>
+                                <h4>Sou natural de Guaratinguetá, contudo sou formada em Arquitetura e Urbanismo pela Pontifícia Universidade Católica de Campinas (PUC-Campinas).</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Meus primeiros passos no universo da Arquitetura se deram em um escritório de renome na cidade de Guaratinguetá, Ricardo Rabello Arquitetura, onde estagiei por 1 ano e 3 meses.</h4>
+                                <h4>Meus primeiros passos no universo da Arquitetura se deram em um escritório de renome na cidade de Guaratinguetá, Ricardo Rabello Arquitetura, onde estagiei por 1 ano e 3 meses.</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Após minha graduação tive oportunidade de trabalhar por quase 2 anos em um escritório em São Paulo, Thais Ruiz Arquitetura Colaborativa, onde era responsável pelos Projetos Legais
+                                <h4>Após minha graduação tive oportunidade de trabalhar por quase 2 anos em um escritório em São Paulo, Thais Ruiz Arquitetura Colaborativa, onde era responsável pelos Projetos Legais
                                     do escritório e onde também tive oportunidade de participar de diversos e incríveis projetos, tanto no setor de criação, quanto no setor de detalhamento e gerenciamento de obra.</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Hoje, atuo regularmente em minha cidade natal e região do Vale do Paraíba, porém, acredito que arquitetura tem o poder de quebrar barreiras geográficas, assim oferecemos nossos
+                                <h4>Hoje, atuo regularmente em minha cidade natal e região do Vale do Paraíba, porém, acredito que arquitetura tem o poder de quebrar barreiras geográficas, assim oferecemos nossos
                                     serviços de projeto e consultoria para qualquer lugar do mundo.</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Tenho me especializado na metodologia BIM de projetos, por entender que esse método oferece os melhores resultados para meus clientes, garantindo um projeto preciso e compatível com outros
+                                <h4>Tenho me especializado na metodologia BIM de projetos, por entender que esse método oferece os melhores resultados para meus clientes, garantindo um projeto preciso e compatível com outros
                                     setores da construção. Desta forma, melhorando o planejamento da obra e evitando imprevistos indesejáveis.</h4>
 
-                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;Meu sonho é fazer uma arquitetura de qualidade para todos e te ajudar a planejar os seus sonhos. Quer saber mais? Entre em contato e vamos descobrir como eu posso te ajudar.</h4>
+                                <h4>Meu sonho é fazer uma arquitetura de qualidade para todos e te ajudar a planejar os seus sonhos. Quer saber mais? Entre em contato e vamos descobrir como eu posso te ajudar.</h4>
                             </div>
                         </section>
                     </div>

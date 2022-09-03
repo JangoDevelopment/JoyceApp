@@ -123,8 +123,8 @@
     background-image: url("./images/interiores.png");
 }
 .apresentacao .block_1 .legal_background_image {
-    background-image: url("./images/legal_novo.png");
-    /* background-image: url("./images/legal.png"); */
+    /* background-image: url("./images/legal_novo.png"); */
+    background-image: url("./images/legal.png");
 }
 .apresentacao .block_1 .consultoria_background_image {
     background-image: url("./images/consultoria.png");
@@ -149,7 +149,7 @@
 
 .apresentacao .block_2 .info .curriculo .curso {
     align-items: flex-start;
-    text-align: left;
+    text-align: justify;
     margin-bottom: 20px;
 }
 
@@ -307,14 +307,14 @@
     }
 
     .mobile .block_2 .info .curriculo {
-        margin-left: 10%;
+        margin-left: 5%;
         width: 90%;
         align-items: flex-start;
     }
 
     .mobile .block_2 .info .curriculo .curso {
         align-items: flex-start;
-        text-align: left;
+        text-align: justify;
         margin-bottom: 20px;
     }
 

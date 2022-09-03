@@ -1,6 +1,6 @@
 export default [
     {
-        titulo: "Projeto de Arquitetônico",
+        titulo: "Projeto Arquitetônico",
         descricao: "Você tem um sonho e não sabe por onde começar? Comece por um projeto que tenha a sua identidade. Da residência aos projetos comerciais e corporativos, aqui pensamos em um projeto funcional e esteticamente agradável sob medida para você. Prezamos por um projeto executivo bem detalhado, com os quantitativos a serem utilizados na obra (tabela de esquadrias, revestimentos, pontos hidráulicos, luminárias, tomadas etc). Com nosso detalhamento de excelência será muito mais fácil prever os custos e o cronograma da sua obra.",
         imageBackgroundClass: "arquitetonico_background_image",
         toggled: false,
