@@ -24,6 +24,14 @@
     background-position: 25% 75%;
 }
 
+.home_panel .background .first-image {
+    background-position: 25% 40%;
+}
+
+.home_panel .background .third-image {
+    background-position: 0% 5%;
+}
+
 .home_panel .background .logo-carousel-container {
     position: absolute;
     z-index: 3;
@@ -45,21 +53,30 @@
     .home_panel .background .logo-carousel-container .logo-carousel-img {
         width: 100%;
     }
+    .home_panel .background .third-image {
+        background-position: 70%;
+    }
 }
 @media screen and (min-width:769px) and (max-width:1370px){
     .home_panel .background .logo-carousel-container .logo-carousel-img {
         width: 70%;
+    }
+    .home_panel .background .third-image {
+        background-position: 70%;
     }
 }
 @media screen and (min-width:525px) and (max-width:768px){
     .home_panel .background .image {
         clip-path: polygon(0 0, 100% 0, 22% 100%, 0 100%);
     }
-    .home_panel .background .yellow-image {
+    .home_panel .background .first-image {
         background-position: 30%;
     }
-    .home_panel .background .red-image {
+    .home_panel .background .second-image {
         background-position: 30%;
+    }
+    .home_panel .background .third-image {
+        background-position: 70%;
     }
     .home_panel .background .logo-carousel-container {
         align-items: flex-end;
@@ -73,11 +90,14 @@
     .home_panel .background .image {
         clip-path: polygon(0 0, 100% 0, 0 84%, 0 84%);
     }
-    .home_panel .background .yellow-image {
+    .home_panel .background .first-image {
         background-position: 30%;
     }
-    .home_panel .background .red-image {
-        background-position: 20%;
+    .home_panel .background .second-image {
+        background-position: 70%;
+    }
+    .home_panel .background .third-image {
+        background-position: 70%;
     }
     .home_panel .background .logo-carousel-container {
         align-items: flex-end;
