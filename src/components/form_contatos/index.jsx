@@ -10,7 +10,7 @@ const FormContatos = (props) => {
             <form className="form flex-column">
                 <div>
                     <h1>vamos tomar um café?</h1>
-                    <a class='link' href="https://api.whatsapp.com/send?phone=5512981470468&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener noreferrer"><IoLogoWhatsapp className="whatsapp link" /> <h2 className="phone">(12) 98147 0468</h2></a>
+                    <a class='link' href="https://api.whatsapp.com/send?phone=5512981470468&text=Ol%C3%A1!%20Aqui%20%C3%A9%20a%20Joyce%20Ca%C3%A7ador%20-%20Arquiteta%20Urbanista.%20Obrigada%20pelo%20seu%20contato!%20No%20momento%20n%C3%A3o%20consigo%20te%20responder%2C%20mas%20deixa%20aqui%20pra%20mim%20o%20assunto%2C%20e%20assim%20que%20estiver%20dispon%C3%ADvel%2C%20irei%20te%20chamar%20para%20conversarmos%20melhor%2C%20tudo%20bem%3F" target="_blank" rel="noopener noreferrer"><IoLogoWhatsapp className="whatsapp link" /> <h2 className="phone">(12) 98147 0468</h2></a>
                     <h2>arq.joycecacador@gmail.com</h2>
                 </div>
                 <div>
@@ -30,7 +30,7 @@ const FormContatos = (props) => {
                     <a href="https://www.instagram.com/arq.joycecacador/" target="_blank" rel="noopener noreferrer"><FaInstagram className="icon link" /></a>
                     <a href="https://www.facebook.com/joyce.cacador" target="_blank" rel="noopener noreferrer"><FaFacebookSquare className="icon link" /></a>
                     <a href="https://www.linkedin.com/in/joyce-ca%C3%A7ador-cavalca-de-barros-bb8393127/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="icon link" /></a>
-                    <a href="https://api.whatsapp.com/send?phone=5512981470468&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener noreferrer"><FaWhatsapp className="icon link" /></a>
+                    <a href="https://api.whatsapp.com/send?phone=5512981470468&text=Ol%C3%A1!%20Aqui%20%C3%A9%20a%20Joyce%20Ca%C3%A7ador%20-%20Arquiteta%20Urbanista.%20Obrigada%20pelo%20seu%20contato!%20No%20momento%20n%C3%A3o%20consigo%20te%20responder%2C%20mas%20deixa%20aqui%20pra%20mim%20o%20assunto%2C%20e%20assim%20que%20estiver%20dispon%C3%ADvel%2C%20irei%20te%20chamar%20para%20conversarmos%20melhor%2C%20tudo%20bem%3F" target="_blank" rel="noopener noreferrer"><FaWhatsapp className="icon link" /></a>
                 </div>
             </form>
             <div className="background" />
