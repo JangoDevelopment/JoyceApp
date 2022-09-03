@@ -229,13 +229,6 @@ export default{
             height: 10,
         }
     ],
-    casa_at:[
-        {
-            src: casa_at_1,
-            width: 16,
-            height: 10,
-        }
-    ],
     galpao_box_tf: [
         {
             src: galpao_box_tf_1,

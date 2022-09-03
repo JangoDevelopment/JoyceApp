@@ -5,16 +5,6 @@ export default {
     residencial: [
         {
             id: 1,
-            titulo: "Casa AT",
-            local: "Guaratinguetá",
-            ano: 2019,
-            descricao:
-                "Esse projeto contempla  uma casa pequena  para um jovem casal. A conexão entre varanda, sala, cozinha e área de serviço proporciona amplitude ao ambiente e maior praticidade. O banheiro foi posicionado de forma que pudesse ser tanto privativo ao quarto quanto para uso das áreas sociais.",
-            capa: "images/capas/residencial_1.jpg",
-            galeria: gallery.casa_at
-        },
-        {
-            id: 2,
             titulo: "Casa MC",
             local: "Guaratinguetá",
             ano: 2019,
@@ -24,7 +14,7 @@ export default {
             galeria: gallery.casa_mc
         },
         {
-            id: 3,
+            id: 2,
             titulo: "Cozinha Rústica",
             local: "Pedrinha - Guaratinguetá",
             ano: 2020,
@@ -34,7 +24,7 @@ export default {
             galeria: gallery.cozinha_rustica
         },
         {
-            id: 4,
+            id: 3,
             titulo: "Sala São José",
             local: "São José dos Campos",
             ano: 2020,
