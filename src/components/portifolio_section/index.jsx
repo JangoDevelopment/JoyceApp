@@ -15,14 +15,6 @@ import img2 from "../portifolio/images/2.png";
 import img3 from "../portifolio/images/3.png";
 
 const PortifolioSection = ({ section_title, section_description, section_list }) => {
-    const comercial_1 = require("../../images/capas/comercial_1.jpg");
-    const comercial_2 = require("../../images/capas/comercial_2.jpg");
-    const comercial_3 = require("../../images/capas/comercial_2.jpg");
-    const comercial_4 = require("../../images/capas/comercial_4.jpg");
-    const residencial_1 = require("../../images/capas/residencial_1.jpg");
-    const residencial_2 = require("../../images/capas/residencial_2.jpg");
-    const residencial_3 = require("../../images/capas/residencial_3.png");
-
     let lowercase_section = section_title.toLowerCase();
     let uppercase_section = section_title.toUpperCase();
 
@@ -42,12 +34,12 @@ const PortifolioSection = ({ section_title, section_description, section_list })
             </div>
             <h4 className="subsection_description">{section_description}</h4>
             <div className="project_galery flex">
-                {section_list.map((item, i) => (
+                {section_list ? section_list.map((item, i) => (
                     <Link key={i} className="project" to={`/projeto/${lowercase_section}/${item.id}`}>
-                        <img src={eval(`${lowercase_section}_${item.id}`)} alt="projeto_capa" />
+                        <img src={item.capa} alt="projeto_capa" />
                         <h3 className="project_name unselectable">{item.titulo}</h3>
                     </Link>
-                ))}
+                )) : ""}
             </div>
         </div>
     );

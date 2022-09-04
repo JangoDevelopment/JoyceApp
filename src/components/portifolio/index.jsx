@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Papa from "papaparse";
 import img1 from "./images/1.png";
 import img2 from "./images/2.png";
 import img3 from "./images/3.png";
@@ -12,6 +13,36 @@ import projetos from "../../data/projetos";
 
 const PortifolioComponent = (props) => {
     const vazio = "";
+
+    const [projetosResidencial, setProjetosResidencial] = useState(false);
+    const [projetosComercial, setProjetosComercial] = useState(false);
+
+    function parseProjetosResidencial() {
+        Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQlSgXAvEkwjl4u2U2cSTK2h8JlrACZSddxgZMOPEuK2xwkMZwiRarAMKYfRI00NbdtUvTNS07hkoZV/pub?output=csv", {
+            download: true,
+            header: true,
+            dynamicTyping: true,
+            complete: (results) => {
+                setProjetosResidencial(results.data);
+            },
+        });
+    }
+
+    function parseProjetosComercial() {
+        Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQg_klbkHuCDKR1ChFI-rw4ZID2lqr_2v427Xvv5kAfCdW9X0ndKKe_zAtCGk-zFKUZY-JrU6iEer61/pub?output=csv", {
+            download: true,
+            header: true,
+            dynamicTyping: true,
+            complete: (results) => {
+                setProjetosComercial(results.data);
+            },
+        });
+    }
+
+    useEffect(() => {
+        parseProjetosResidencial();
+        parseProjetosComercial();
+    }, []);
 
     return (
         <div className="portifolio">
@@ -44,10 +75,10 @@ const PortifolioComponent = (props) => {
                 </div>
 
                 <div name="residencial" className="sub_subsection">
-                    <PortifolioSection section_title={"residencial"} section_list={projetos.residencial} section_description={vazio} />
+                    <PortifolioSection section_title={"residencial"} section_list={projetosResidencial} section_description={vazio} />
                 </div>
                 <div name="comercial" className="sub_subsection">
-                    <PortifolioSection section_title={"comercial"} section_list={projetos.comercial} section_description={vazio} />
+                    <PortifolioSection section_title={"comercial"} section_list={projetosComercial} section_description={vazio} />
                 </div>
             </div>
         </div>
