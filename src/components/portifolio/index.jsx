@@ -23,7 +23,7 @@ const PortifolioComponent = (props) => {
             header: true,
             dynamicTyping: true,
             complete: (results) => {
-                setProjetosResidencial(results.data);
+                setProjetosResidencial(results.data.reverse());
             },
         });
     }
@@ -34,7 +34,7 @@ const PortifolioComponent = (props) => {
             header: true,
             dynamicTyping: true,
             complete: (results) => {
-                setProjetosComercial(results.data);
+                setProjetosComercial(results.data.reverse());
             },
         });
     }
