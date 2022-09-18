@@ -18,7 +18,7 @@ const PortifolioComponent = (props) => {
     const [projetosComercial, setProjetosComercial] = useState(false);
 
     function parseProjetosResidencial() {
-        Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQlSgXAvEkwjl4u2U2cSTK2h8JlrACZSddxgZMOPEuK2xwkMZwiRarAMKYfRI00NbdtUvTNS07hkoZV/pub?output=csv", {
+        Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vS1ZpvBypy_l6Idnz5ljp8cOFfMp7QZU4MVt0Zne--x42W5MQDhLOdquJJOoVtj9Vak_Br5ejtSlCcw/pub?output=csv", {
             download: true,
             header: true,
             dynamicTyping: true,
@@ -29,7 +29,7 @@ const PortifolioComponent = (props) => {
     }
 
     function parseProjetosComercial() {
-        Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQg_klbkHuCDKR1ChFI-rw4ZID2lqr_2v427Xvv5kAfCdW9X0ndKKe_zAtCGk-zFKUZY-JrU6iEer61/pub?output=csv", {
+        Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3XvPrJ45E2-uIP3oMXrFKxlu9MpJ_oTcwwcqNGovTAwzwGXqula83UVFs65hictNSpELUA7E7eKAw/pub?output=csv", {
             download: true,
             header: true,
             dynamicTyping: true,
