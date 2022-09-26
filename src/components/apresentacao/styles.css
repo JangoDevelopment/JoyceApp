@@ -117,20 +117,18 @@
     background-image: url("./images/1.jpg");
 }
 .apresentacao .block_1 .arquitetonico_background_image {
-    background-image: url("./images/arquitetonico.jpg");
+    background-image: url("./images/arquitetonico.png");
 }
 .apresentacao .block_1 .interiores_background_image {
     background-image: url("./images/interiores.png");
 }
 .apresentacao .block_1 .legal_background_image {
-    /* background-image: url("./images/legal_novo.png"); */
     background-image: url("./images/legal.png");
 }
 .apresentacao .block_1 .consultoria_background_image {
     background-image: url("./images/consultoria.png");
 }
 .apresentacao .block_1 .modelagem_background_image {
-    /* background-image: url("./images/modelagem.webp"); */
     background-image: url("./images/modelagem.png");
 }
 .apresentacao .block_1 .acompanhamento_background_image {
