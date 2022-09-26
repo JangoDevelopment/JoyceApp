@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Papa from "papaparse";
 import img1 from "./images/1.png";
 import img2 from "./images/2.png";
 import img3 from "./images/3.png";
+import houseImg from "./images/house.png";
+import marketImg from "./images/market.png";
 import { Link } from "react-scroll";
 import PortifolioSection from "../portifolio_section";
 import "./styles.css";
@@ -9,53 +12,47 @@ import "./styles.css";
 import projetos from "../../data/projetos";
 
 const PortifolioComponent = (props) => {
-    const description_residencial =
-        "Você tem um sonho e não sabe por onde começar? \n Comece por um projeto que tenha a sua identidade. \n Da residência aos projetos comerciais, aqui pensamos em um projeto funcional e esteticamente agradável sobre medida para você. ";
-        const description_reformas =
-        "Precisando dar uma cara nova para o seu espaço? Se seu ambiente/imóvel está precisando ser adaptado ou ganhar novo significado pode contar com nossa criatividade. Derrubando paredes ou respeitando a história do lugar, acharemos a melhor solução de acordo com as suas necessidades.";
-        const description_obras =
-        "O sucesso de uma obra envolve dedicação e um bom planejamento. Trabalhamos com visitas técnicas, cronograma de obras e planilha orçamentária. ";
     const vazio = "";
+
+    const [projetosResidencial, setProjetosResidencial] = useState(false);
+    const [projetosComercial, setProjetosComercial] = useState(false);
+
+    function parseProjetosResidencial() {
+        Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vS1ZpvBypy_l6Idnz5ljp8cOFfMp7QZU4MVt0Zne--x42W5MQDhLOdquJJOoVtj9Vak_Br5ejtSlCcw/pub?output=csv", {
+            download: true,
+            header: true,
+            dynamicTyping: true,
+            complete: (results) => {
+                setProjetosResidencial(results.data.reverse());
+            },
+        });
+    }
+
+    function parseProjetosComercial() {
+        Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3XvPrJ45E2-uIP3oMXrFKxlu9MpJ_oTcwwcqNGovTAwzwGXqula83UVFs65hictNSpELUA7E7eKAw/pub?output=csv", {
+            download: true,
+            header: true,
+            dynamicTyping: true,
+            complete: (results) => {
+                setProjetosComercial(results.data.reverse());
+            },
+        });
+    }
+
+    useEffect(() => {
+        parseProjetosResidencial();
+        parseProjetosComercial();
+    }, []);
 
     return (
         <div className="portifolio">
-            <div className="parte1 flex-column">
-                <h1 className="section_title center_text">Veja nossas diferentes sessões de projetos </h1>
-                <div className="flex first_panel">
-                    <div className="section flex-column">
-                        <Link activeClass="active" to="test1" spy={true} smooth={true} duration={500} offset={-50}>
-                            <div className="box flex block_1">
-                                <img className="unselectable box_img" src={img1} alt="" />
-                                <h3 className="title unselectable">projetos</h3>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="section flex-column">
-                        <Link activeClass="active" to="reforma" spy={true} smooth={true} duration={500} offset={-50}>
-                            <div className="box flex block_2">
-                                <img className="unselectable box_img" src={img2} alt="" />
-                                <h3 className="title unselectable">reformas</h3>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="section flex-column">
-                        <Link activeClass="active" to="obras" spy={true} smooth={true} duration={500} offset={-50}>
-                            <div className="box flex block_3">
-                                <img className="unselectable box_img" src={img3} alt="" />
-                                <h3 className="title unselectable">acessoria de obras</h3>
-                            </div>
-                        </Link>
-                    </div>
-                </div>
-            </div>
             <div name="test1" className="projetos flex-column">
                 <div className="grey_block">
                     <div className="subsection">
                         <div className="flex title_line">
                             <img class="section_icon" src={img1} alt="" />
-                            <h1 className="section_title">Projetos</h1>
+                            <h1 className="section_title">Veja nossas diferentes sessões de projeto</h1>
                         </div>
-                        <h4 className="section_description">{description_residencial}</h4>
                         <div className="section_options flex">
                             <Link
                                 className="section_box flex block_1"
@@ -65,44 +62,24 @@ const PortifolioComponent = (props) => {
                                 smooth={true}
                                 duration={500}
                                 offset={-50}>
+                                <img className="unselectable box_img" src={houseImg} alt="Desenho de uma casa" />
                                 <h3 className="title unselectable">residencial</h3>
                             </Link>
 
                             <Link className="section_box flex block_2" activeClass="active" to="comercial" spy={true} smooth={true} duration={500} offset={-50}>
+                                <img className="unselectable box_img" src={marketImg} alt="Desenho de uma loja" />
                                 <h3 className="title unselectable">comercial</h3>
-                            </Link>
-
-                            <Link
-                                className="section_box flex block_3"
-                                activeClass="active"
-                                to="interiores"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                offset={-50}>
-                                <h3 className="title unselectable">interiores</h3>
                             </Link>
                         </div>
                     </div>
                 </div>
 
                 <div name="residencial" className="sub_subsection">
-                    <PortifolioSection section_title={"residencial"} section_list={projetos.residencial} section_description={vazio} />
+                    <PortifolioSection section_title={"residencial"} section_list={projetosResidencial} section_description={vazio} />
                 </div>
                 <div name="comercial" className="sub_subsection">
-                    <PortifolioSection section_title={"comercial"} section_list={projetos.comercial} section_description={vazio} />
+                    <PortifolioSection section_title={"comercial"} section_list={projetosComercial} section_description={vazio} />
                 </div>
-                <div name="interiores" className="sub_subsection">
-                    <PortifolioSection section_title={"interiores"} section_list={projetos.interiores} section_description={vazio} />
-                </div>
-            </div>
-            <div className="grey_block">
-                <div name="reforma" className="subsection">
-                    <PortifolioSection section_title={"Reformas"} section_list={projetos.reformas} section_description={description_reformas} />
-                </div>
-            </div>
-            <div name="obras" className="subsection">
-                <PortifolioSection section_title={"Acessoria de Obras"} section_list={projetos.obras} section_description={description_obras} />
             </div>
         </div>
     );

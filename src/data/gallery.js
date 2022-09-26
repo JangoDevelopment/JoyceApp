@@ -40,8 +40,10 @@ import ser_stella_6 from "../assets/gallery/ser_stella/6.jpg";
 
 import casa_at_1 from "../assets/gallery/casa_at/1.jpg";
 
-
-
+import galpao_box_tf_1 from "../assets/gallery/galpao_box_tf/1.jpg";
+import galpao_box_tf_2 from "../assets/gallery/galpao_box_tf/2.jpg";
+import galpao_box_tf_3 from "../assets/gallery/galpao_box_tf/3.jpg";
+import galpao_box_tf_4 from "../assets/gallery/galpao_box_tf/4.jpg";
 
 export default{
     casa_sjc:[ {
@@ -227,11 +229,26 @@ export default{
             height: 10,
         }
     ],
-    casa_at:[
+    galpao_box_tf: [
         {
-            src: casa_at_1,
+            src: galpao_box_tf_1,
+            width: 16,
+            height: 16,
+        },
+        {
+            src: galpao_box_tf_2,
+            width: 16,
+            height: 24,
+        },
+        {
+            src: galpao_box_tf_3,
             width: 16,
             height: 10,
-        }
-    ]
+        },
+        {
+            src: galpao_box_tf_4,
+            width: 16,
+            height: 22,
+        },
+    ],
 }

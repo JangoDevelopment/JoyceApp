@@ -65,7 +65,7 @@
 .projeto_component .additional_info .bloco {
     height: 12vh;
     width: 300px;
-    background-color: #ffdc5f;
+    background-color: var(--logo-yellow);
     border-radius: 3px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -97,7 +97,7 @@
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .projeto_component .additional_info .bloco .ano {
@@ -197,7 +197,7 @@
 .projeto_component_mobile .additional_info .bloco {
     height: 12vh;
     width: 100%;
-    background-color: #ffdc5f;
+    background-color: var(--logo-yellow);
     border-radius: 3px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;

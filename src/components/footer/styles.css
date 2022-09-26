@@ -40,7 +40,7 @@
 }
 
 .footer .coffee_icon:hover {
-    color: var(--dark-yellow);
+    color: var(--logo-yellow);
 }
 
 .footer .icons {
@@ -62,6 +62,14 @@
     color: #ffbb00;
 }
 
+
+@media screen and (min-width:1371px){
+    .footer p span{
+        font-size: 12px;
+        color: var(--light-gray);
+    }
+}
+
 @media screen and (min-width:769px) and (max-width:1370px){
 
     .footer{
@@ -70,6 +78,11 @@
 
     .footer p {
         font-size: 12px;
+    }
+
+    .footer p span{
+        font-size: 12px;
+        color: var(--light-gray);
     }
 }
 
@@ -93,10 +106,10 @@
     }
 
     .footer p span {
-        color: var(--dark-yellow);
+        color: var(--logo-yellow);
     }
 
     .footer .icon {
-        color: var(--dark-yellow);
+        color: var(--logo-yellow);
     }
 }
