@@ -5,8 +5,7 @@ import logo_img from "../../assets/logo.png";
 import styled from "styled-components";
 import img0 from "./images/0.jpg";
 import img1 from "./images/1.png";
-import img2 from "./images/2_novo.jpg";
-// import img2 from "./images/2.jpg";
+import img2 from "./images/2.jpg";
 
 const HomePanel = ({ painel }) => {
     const Image0 = styled.div`
